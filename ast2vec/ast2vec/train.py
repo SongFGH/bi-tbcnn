@@ -55,7 +55,7 @@ def learn_vectors(samples, logdir, outfile, num_feats=NUM_FEATURES, epochs=EPOCH
         for batch in sample_gen:
             input_batch, label_batch = batch
             # print label_batch
-            _, summary, embedding, err = sess.run(
+            _, summary, embed, err = sess.run(
                 [train_step, summaries, embed_node, loss_node],
                 feed_dict={
                     input_node: input_batch,
@@ -70,11 +70,11 @@ def learn_vectors(samples, logdir, outfile, num_feats=NUM_FEATURES, epochs=EPOCH
                 saver.save(sess, os.path.join(checkfile), step)
                 print('Checkpoint saved, epoch: ' + str(epoch) + ', step: ' + str(step) + ', loss:' + str(err) + '.')
                 # save embeddings
-		pickle.dump((embedding, NODE_MAP), embed_file)
+		pickle.dump((embed, NODE_MAP), embed_file)
             step += 1
 
     # save embeddings and the mapping
-    pickle.dump((embedding, NODE_MAP), embed_file)
+    pickle.dump((embed, NODE_MAP), embed_file)
     embed_file.close()
     saver.save(sess, os.path.join(checkfile), step)
 

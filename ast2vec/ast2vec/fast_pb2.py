@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='fast.proto',
   package='fast',
   syntax='proto3',
-  serialized_pb=_b('\n\nfast.proto\x12\x04\x66\x61st\"\xaa\x39\n\x07\x45lement\x12\"\n\x04kind\x18\x01 \x01(\x0e\x32\x12.fast.Element.KindH\x00\x12%\n\nsmali_kind\x18\x02 \x01(\x0e\x32\x0f.fast.SmaliKindH\x00\x12)\n\x0cpython3_kind\x18\x03 \x01(\x0e\x32\x11.fast.Python3KindH\x00\x12\x0c\n\x04text\x18\x04 \x01(\x0c\x12\x0b\n\x03pos\x18\x05 \x01(\x05\x12\x0e\n\x06length\x18\x06 \x01(\x05\x12\x1c\n\x05\x63hild\x18\x07 \x03(\x0b\x32\r.fast.Element\x12\x0c\n\x04tail\x18\x08 \x01(\x0c\x12\"\n\x04unit\x18\t \x01(\x0b\x32\x12.fast.Element.UnitH\x01\x12(\n\x07literal\x18\n \x01(\x0b\x32\x15.fast.Element.LiteralH\x01\x12\x0c\n\x04line\x18\x0b \x01(\x05\x12\x0e\n\x06\x63olumn\x18\x0c \x01(\x05\x12\r\n\x05label\x18\r \x01(\x02\x12&\n\x06\x63hange\x18\x0e \x01(\x0e\x32\x16.fast.Element.DiffType\x12\x0c\n\x04keep\x18\x0f \x01(\x08\x1a\xdc\x01\n\x04Unit\x12\x10\n\x08\x66ilename\x18\x01 \x01(\t\x12\x10\n\x08revision\x18\x02 \x01(\t\x12\x31\n\x08language\x18\x03 \x01(\x0e\x32\x1f.fast.Element.Unit.LanguageType\x12\x0c\n\x04item\x18\x04 \x01(\x05\"o\n\x0cLanguageType\x12\t\n\x05\x44UMMY\x10\x00\x12\x07\n\x03\x41LL\x10\x01\x12\x06\n\x02OO\x10\x02\x12\x07\n\x03\x43XX\x10\x03\x12\x05\n\x01\x43\x10\x04\x12\x0c\n\x08\x43_FAMILY\x10\x05\x12\x08\n\x04JAVA\x10\x06\x12\n\n\x06\x43SHARP\x10\x07\x12\x0f\n\x0bOBJECTIVE_C\x10\x08\x1a\xab\x01\n\x07Literal\x12/\n\x04type\x18\x01 \x01(\x0e\x32!.fast.Element.Literal.LiteralType\"o\n\x0bLiteralType\x12\x0e\n\ndummy_type\x10\x00\x12\x0f\n\x0bnumber_type\x10\x01\x12\r\n\tchar_type\x10\x02\x12\x0f\n\x0bstring_type\x10\x03\x12\x10\n\x0c\x62oolean_type\x10\x04\x12\r\n\tnull_type\x10\x05\"\xaf\x32\n\x04Kind\x12\r\n\tUNIT_KIND\x10\x00\x12\x08\n\x04\x44\x45\x43L\x10\x01\x12\r\n\tDECL_STMT\x10\x02\x12\x08\n\x04INIT\x10\x03\x12\x08\n\x04\x45XPR\x10\x04\x12\r\n\tEXPR_STMT\x10\x05\x12\x0b\n\x07\x43OMMENT\x10\x06\x12\x08\n\x04\x43\x41LL\x10\x07\x12\x0b\n\x07\x43ONTROL\x10\x08\x12\x08\n\x04INCR\x10\t\x12\x08\n\x04NONE\x10\n\x12\x0c\n\x08VARIABLE\x10\x0b\x12\x0c\n\x08\x46UNCTION\x10\x0c\x12\x11\n\rFUNCTION_DECL\x10\r\x12\x0f\n\x0b\x43ONSTRUCTOR\x10\x0e\x12\x14\n\x10\x43ONSTRUCTOR_DECL\x10\x0f\x12\x0e\n\nDESTRUCTOR\x10\x10\x12\x13\n\x0f\x44\x45STRUCTOR_DECL\x10\x11\x12\t\n\x05MACRO\x10\x12\x12\x10\n\x0cSINGLE_MACRO\x10\x13\x12\x10\n\x0cNULLOPERATOR\x10\x14\x12\r\n\tENUM_DEFN\x10\x15\x12\r\n\tENUM_DECL\x10\x16\x12\x14\n\x10GLOBAL_ATTRIBUTE\x10\x17\x12\x15\n\x11PROPERTY_ACCESSOR\x10\x18\x12\x1a\n\x16PROPERTY_ACCESSOR_DECL\x10\x19\x12\x0e\n\nEXPRESSION\x10\x1a\x12\x0e\n\nCLASS_DEFN\x10\x1b\x12\x0e\n\nCLASS_DECL\x10\x1c\x12\x0e\n\nUNION_DEFN\x10\x1d\x12\x0e\n\nUNION_DECL\x10\x1e\x12\x0f\n\x0bSTRUCT_DEFN\x10\x1f\x12\x0f\n\x0bSTRUCT_DECL\x10 \x12\x12\n\x0eINTERFACE_DEFN\x10!\x12\x12\n\x0eINTERFACE_DECL\x10\"\x12\x11\n\rACCESS_REGION\x10#\x12\t\n\x05USING\x10$\x12\x15\n\x11OPERATOR_FUNCTION\x10%\x12\x1a\n\x16OPERATOR_FUNCTION_DECL\x10&\x12\t\n\x05\x45VENT\x10\'\x12\x0c\n\x08PROPERTY\x10(\x12\x13\n\x0f\x41NNOTATION_DEFN\x10)\x12\x13\n\x0fGLOBAL_TEMPLATE\x10*\x12\x08\n\x04UNIT\x10+\x12\x16\n\x12TART_ELEMENT_TOKEN\x10,\x12\x07\n\x03NOP\x10-\x12\n\n\x06STRING\x10.\x12\x08\n\x04\x43HAR\x10/\x12\x0b\n\x07LITERAL\x10\x30\x12\x0b\n\x07\x42OOLEAN\x10\x31\x12\x08\n\x04NULL\x10\x32\x12\x0b\n\x07\x43OMPLEX\x10\x33\x12\x0c\n\x08OPERATOR\x10\x34\x12\x0c\n\x08MODIFIER\x10\x35\x12\x08\n\x04NAME\x10\x36\x12\t\n\x05ONAME\x10\x37\x12\t\n\x05\x43NAME\x10\x38\x12\x08\n\x04TYPE\x10\x39\x12\x0c\n\x08TYPEPREV\x10:\x12\r\n\tCONDITION\x10;\x12\t\n\x05\x42LOCK\x10<\x12\x10\n\x0cPSEUDO_BLOCK\x10=\x12\t\n\x05INDEX\x10>\x12\x08\n\x04\x45NUM\x10?\x12\x14\n\x10\x45NUM_DECLARATION\x10@\x12\x10\n\x0cIF_STATEMENT\x10\x41\x12\x0b\n\x07TERNARY\x10\x42\x12\x08\n\x04THEN\x10\x43\x12\x08\n\x04\x45LSE\x10\x44\x12\n\n\x06\x45LSEIF\x10\x45\x12\x13\n\x0fWHILE_STATEMENT\x10\x46\x12\x10\n\x0c\x44O_STATEMENT\x10G\x12\x11\n\rFOR_STATEMENT\x10H\x12\x15\n\x11\x46OREACH_STATEMENT\x10I\x12\x0f\n\x0b\x46OR_CONTROL\x10J\x12\x16\n\x12\x46OR_INITIALIZATION\x10K\x12\x11\n\rFOR_CONDITION\x10L\x12\x11\n\rFOR_INCREMENT\x10M\x12\x14\n\x10\x46OR_LIKE_CONTROL\x10N\x12\x18\n\x14\x45XPRESSION_STATEMENT\x10O\x12\x11\n\rFUNCTION_CALL\x10Q\x12\x19\n\x15\x44\x45\x43LARATION_STATEMENT\x10R\x12\x0f\n\x0b\x44\x45\x43LARATION\x10S\x12\x1e\n\x1a\x44\x45\x43LARATION_INITIALIZATION\x10T\x12\x15\n\x11\x44\x45\x43LARATION_RANGE\x10U\x12\t\n\x05RANGE\x10V\x12\x12\n\x0eGOTO_STATEMENT\x10W\x12\x16\n\x12\x43ONTINUE_STATEMENT\x10X\x12\x13\n\x0f\x42REAK_STATEMENT\x10Y\x12\x13\n\x0fLABEL_STATEMENT\x10Z\x12\t\n\x05LABEL\x10[\x12\n\n\x06SWITCH\x10\\\x12\x08\n\x04\x43\x41SE\x10]\x12\x0b\n\x07\x44\x45\x46\x41ULT\x10^\x12\x17\n\x13\x46UNCTION_DEFINITION\x10_\x12\x18\n\x14\x46UNCTION_DECLARATION\x10`\x12\n\n\x06LAMBDA\x10\x61\x12\x13\n\x0f\x46UNCTION_LAMBDA\x10\x62\x12\x16\n\x12\x46UNCTION_SPECIFIER\x10\x63\x12\x14\n\x10RETURN_STATEMENT\x10\x64\x12\x12\n\x0ePARAMETER_LIST\x10\x65\x12\r\n\tPARAMETER\x10\x66\x12\x14\n\x10KRPARAMETER_LIST\x10g\x12\x0f\n\x0bKRPARAMETER\x10h\x12\x11\n\rARGUMENT_LIST\x10i\x12\x0c\n\x08\x41RGUMENT\x10j\x12\x19\n\x15PSEUDO_PARAMETER_LIST\x10k\x12\x1a\n\x16INDEXER_PARAMETER_LIST\x10l\x12\t\n\x05\x43LASS\x10m\x12\x15\n\x11\x43LASS_DECLARATION\x10n\x12\n\n\x06STRUCT\x10o\x12\x16\n\x12STRUCT_DECLARATION\x10p\x12\t\n\x05UNION\x10q\x12\x15\n\x11UNION_DECLARATION\x10r\x12\x13\n\x0f\x44\x45RIVATION_LIST\x10s\x12\x11\n\rPUBLIC_ACCESS\x10t\x12\x19\n\x15PUBLIC_ACCESS_DEFAULT\x10u\x12\x12\n\x0ePRIVATE_ACCESS\x10v\x12\x1a\n\x16PRIVATE_ACCESS_DEFAULT\x10w\x12\x14\n\x10PROTECTED_ACCESS\x10x\x12\x1c\n\x18PROTECTED_ACCESS_DEFAULT\x10y\x12\x14\n\x10MEMBER_INIT_LIST\x10z\x12\x1e\n\x1aMEMBER_INITIALIZATION_LIST\x10{\x12\x19\n\x15MEMBER_INITIALIZATION\x10|\x12\x1a\n\x16\x43ONSTRUCTOR_DEFINITION\x10}\x12\x1b\n\x17\x43ONSTRUCTOR_DECLARATION\x10~\x12\x19\n\x15\x44\x45STRUCTOR_DEFINITION\x10\x7f\x12\x1b\n\x16\x44\x45STRUCTOR_DECLARATION\x10\x80\x01\x12\x0b\n\x06\x46RIEND\x10\x81\x01\x12\x14\n\x0f\x43LASS_SPECIFIER\x10\x82\x01\x12\x0e\n\tTRY_BLOCK\x10\x83\x01\x12\x10\n\x0b\x43\x41TCH_BLOCK\x10\x84\x01\x12\x12\n\rFINALLY_BLOCK\x10\x85\x01\x12\x14\n\x0fTHROW_STATEMENT\x10\x86\x01\x12\x14\n\x0fTHROW_SPECIFIER\x10\x87\x01\x12\x19\n\x14THROW_SPECIFIER_JAVA\x10\x88\x01\x12\r\n\x08TEMPLATE\x10\x89\x01\x12\x15\n\x10GENERIC_ARGUMENT\x10\x8a\x01\x12\x1a\n\x15GENERIC_ARGUMENT_LIST\x10\x8b\x01\x12\x17\n\x12TEMPLATE_PARAMETER\x10\x8c\x01\x12\x1c\n\x17TEMPLATE_PARAMETER_LIST\x10\x8d\x01\x12\x16\n\x11GENERIC_PARAMETER\x10\x8e\x01\x12\x1b\n\x16GENERIC_PARAMETER_LIST\x10\x8f\x01\x12\x0c\n\x07TYPEDEF\x10\x90\x01\x12\x08\n\x03\x41SM\x10\x91\x01\x12\x0f\n\nMACRO_CALL\x10\x92\x01\x12\x10\n\x0bSIZEOF_CALL\x10\x93\x01\x12\x0b\n\x06\x45XTERN\x10\x94\x01\x12\x0e\n\tNAMESPACE\x10\x95\x01\x12\x14\n\x0fUSING_DIRECTIVE\x10\x96\x01\x12\x0e\n\tDIRECTIVE\x10\x97\x01\x12\x0b\n\x06\x41TOMIC\x10\x98\x01\x12\x1c\n\x17STATIC_ASSERT_STATEMENT\x10\x99\x01\x12\x16\n\x11GENERIC_SELECTION\x10\x9a\x01\x12\x15\n\x10GENERIC_SELECTOR\x10\x9b\x01\x12\x1d\n\x18GENERIC_ASSOCIATION_LIST\x10\x9c\x01\x12\x18\n\x13GENERIC_ASSOCIATION\x10\x9d\x01\x12\x0c\n\x07\x41LIGNAS\x10\x9e\x01\x12\r\n\x08\x44\x45\x43LTYPE\x10\x9f\x01\x12\x0c\n\x07\x43\x41PTURE\x10\xa0\x01\x12\x13\n\x0eLAMBDA_CAPTURE\x10\xa1\x01\x12\r\n\x08NOEXCEPT\x10\xa2\x01\x12\r\n\x08TYPENAME\x10\xa3\x01\x12\x0c\n\x07\x41LIGNOF\x10\xa4\x01\x12\x0b\n\x06TYPEID\x10\xa5\x01\x12\x10\n\x0bSIZEOF_PACK\x10\xa6\x01\x12\x0f\n\nENUM_CLASS\x10\xa7\x01\x12\x1b\n\x16\x45NUM_CLASS_DECLARATION\x10\xa8\x01\x12\x12\n\rREF_QUALIFIER\x10\xab\x01\x12\x12\n\rSIGNAL_ACCESS\x10\xac\x01\x12\x16\n\x11\x46OREVER_STATEMENT\x10\xad\x01\x12\x13\n\x0e\x45MIT_STATEMENT\x10\xae\x01\x12\x12\n\rCPP_DIRECTIVE\x10\xaf\x01\x12\x11\n\x0c\x43PP_FILENAME\x10\xb0\x01\x12\t\n\x04\x46ILE\x10\xb1\x01\x12\x0b\n\x06NUMBER\x10\xb2\x01\x12\x0f\n\nCPP_NUMBER\x10\xb3\x01\x12\x10\n\x0b\x43PP_LITERAL\x10\xb4\x01\x12\x13\n\x0e\x43PP_MACRO_DEFN\x10\xb5\x01\x12\x14\n\x0f\x43PP_MACRO_VALUE\x10\xb6\x01\x12\n\n\x05\x45RROR\x10\xb7\x01\x12\x0e\n\tCPP_ERROR\x10\xb8\x01\x12\x10\n\x0b\x43PP_WARNING\x10\xb9\x01\x12\x0f\n\nCPP_PRAGMA\x10\xba\x01\x12\x10\n\x0b\x43PP_INCLUDE\x10\xbb\x01\x12\x0f\n\nCPP_DEFINE\x10\xbc\x01\x12\x0e\n\tCPP_UNDEF\x10\xbd\x01\x12\r\n\x08\x43PP_LINE\x10\xbe\x01\x12\x0b\n\x06\x43PP_IF\x10\xbf\x01\x12\x0e\n\tCPP_IFDEF\x10\xc0\x01\x12\x0f\n\nCPP_IFNDEF\x10\xc1\x01\x12\r\n\x08\x43PP_THEN\x10\xc2\x01\x12\r\n\x08\x43PP_ELSE\x10\xc3\x01\x12\r\n\x08\x43PP_ELIF\x10\xc4\x01\x12\x0e\n\tCPP_EMPTY\x10\xc5\x01\x12\x0f\n\nCPP_REGION\x10\xc6\x01\x12\x12\n\rCPP_ENDREGION\x10\xc7\x01\x12\x0f\n\nUSING_STMT\x10\xc8\x01\x12\x0b\n\x06\x45SCAPE\x10\xc9\x01\x12\n\n\x05VALUE\x10\xca\x01\x12\x0f\n\nCPP_IMPORT\x10\xcb\x01\x12\x0e\n\tCPP_ENDIF\x10\xcc\x01\x12\x0b\n\x06MARKER\x10\xcd\x01\x12\x10\n\x0b\x45RROR_PARSE\x10\xce\x01\x12\x0f\n\nERROR_MODE\x10\xcf\x01\x12\x0f\n\nIMPLEMENTS\x10\xd0\x01\x12\x0c\n\x07\x45XTENDS\x10\xd1\x01\x12\x0b\n\x06IMPORT\x10\xd2\x01\x12\x0c\n\x07PACKAGE\x10\xd3\x01\x12\x15\n\x10\x41SSERT_STATEMENT\x10\xd4\x01\x12\x0e\n\tINTERFACE\x10\xd5\x01\x12\x1a\n\x15INTERFACE_DECLARATION\x10\xd6\x01\x12\x1b\n\x16SYNCHRONIZED_STATEMENT\x10\xd7\x01\x12\x0f\n\nANNOTATION\x10\xd8\x01\x12\x11\n\x0cSTATIC_BLOCK\x10\xda\x01\x12\x16\n\x11\x43HECKED_STATEMENT\x10\xdb\x01\x12\x18\n\x13UNCHECKED_STATEMENT\x10\xdc\x01\x12\x0e\n\tATTRIBUTE\x10\xdd\x01\x12\x0b\n\x06TARGET\x10\xde\x01\x12\x15\n\x10UNSAFE_STATEMENT\x10\xdf\x01\x12\x13\n\x0eLOCK_STATEMENT\x10\xe0\x01\x12\x14\n\x0f\x46IXED_STATEMENT\x10\xe1\x01\x12\x0b\n\x06TYPEOF\x10\xe2\x01\x12\x14\n\x0fUSING_STATEMENT\x10\xe3\x01\x12\x16\n\x11\x46UNCTION_DELEGATE\x10\xe4\x01\x12\x0f\n\nCONSTRAINT\x10\xe6\x01\x12\t\n\x04LINQ\x10\xe7\x01\x12\t\n\x04\x46ROM\x10\xe8\x01\x12\n\n\x05WHERE\x10\xe9\x01\x12\x0b\n\x06SELECT\x10\xea\x01\x12\x08\n\x03LET\x10\xeb\x01\x12\x0c\n\x07ORDERBY\x10\xec\x01\x12\t\n\x04JOIN\x10\xed\x01\x12\n\n\x05GROUP\x10\xee\x01\x12\x07\n\x02IN\x10\xef\x01\x12\x07\n\x02ON\x10\xf0\x01\x12\x0b\n\x06\x45QUALS\x10\xf1\x01\x12\x07\n\x02\x42Y\x10\xf2\x01\x12\t\n\x04INTO\x10\xf3\x01\x12\n\n\x05\x45MPTY\x10\xf4\x01\x12\x0f\n\nEMPTY_STMT\x10\xf5\x01\x12\r\n\x08RECEIVER\x10\xf6\x01\x12\x0c\n\x07MESSAGE\x10\xf7\x01\x12\r\n\x08SELECTOR\x10\xf8\x01\x12\x12\n\rPROTOCOL_LIST\x10\xf9\x01\x12\r\n\x08\x43\x41TEGORY\x10\xfa\x01\x12\r\n\x08PROTOCOL\x10\xfb\x01\x12\x15\n\x10REQUIRED_DEFAULT\x10\xfc\x01\x12\r\n\x08REQUIRED\x10\xfd\x01\x12\r\n\x08OPTIONAL\x10\xfe\x01\x12\x13\n\x0e\x41TTRIBUTE_LIST\x10\x80\x02\x12\x0f\n\nSYNTHESIZE\x10\x81\x02\x12\x0c\n\x07\x44YNAMIC\x10\x82\x02\x12\x0b\n\x06\x45NCODE\x10\x83\x02\x12\x14\n\x0f\x41UTORELEASEPOOL\x10\x84\x02\x12\x18\n\x13\x43OMPATIBILITY_ALIAS\x10\x85\x02\x12\x08\n\x03NIL\x10\x86\x02\x12\x14\n\x0f\x43LASS_INTERFACE\x10\x87\x02\x12\x19\n\x14\x43LASS_IMPLEMENTATION\x10\x88\x02\x12\x19\n\x14PROTOCOL_DECLARATION\x10\x89\x02\x12\t\n\x04\x43\x41ST\x10\x8a\x02\x12\x0f\n\nCONST_CAST\x10\x8b\x02\x12\x11\n\x0c\x44YNAMIC_CAST\x10\x8c\x02\x12\x15\n\x10REINTERPRET_CAST\x10\x8d\x02\x12\x10\n\x0bSTATIC_CAST\x10\x8e\x02\x12\r\n\x08POSITION\x10\x8f\x02\x12\x17\n\x12\x43UDA_ARGUMENT_LIST\x10\x90\x02\x12\x12\n\rOMP_DIRECTIVE\x10\x91\x02\x12\r\n\x08OMP_NAME\x10\x92\x02\x12\x0f\n\nOMP_CLAUSE\x10\x93\x02\x12\x16\n\x11OMP_ARGUMENT_LIST\x10\x94\x02\x12\x11\n\x0cOMP_ARGUMENT\x10\x95\x02\x12\x13\n\x0eOMP_EXPRESSION\x10\x96\x02\x12\x16\n\x11\x45ND_ELEMENT_TOKEN\x10\x97\x02\x12\t\n\x04MAIN\x10\x98\x02\x12\n\n\x05\x42REAK\x10\x99\x02\x12\r\n\x08\x43ONTINUE\x10\x9a\x02\x12\n\n\x05WHILE\x10\x9b\x02\x12\x07\n\x02\x44O\x10\x9c\x02\x12\x08\n\x03\x46OR\x10\x9d\x02\x12\x07\n\x02IF\x10\x9e\x02\x12\t\n\x04GOTO\x10\xa5\x02\x12\x13\n\x0eVISUAL_CXX_ASM\x10\xa7\x02\x12\x0b\n\x06SIZEOF\x10\xa8\x02\x12\t\n\x04\x41UTO\x10\xaa\x02\x12\r\n\x08REGISTER\x10\xab\x02\x12\r\n\x08RESTRICT\x10\xac\x02\x12\x0e\n\tIMAGINARY\x10\xb0\x02\x12\r\n\x08NORETURN\x10\xb1\x02\x12\x12\n\rSTATIC_ASSERT\x10\xb2\x02\x12\x0e\n\tCRESTRICT\x10\xb3\x02\x12\x0c\n\x07\x43XX_TRY\x10\xb4\x02\x12\x0e\n\tCXX_CATCH\x10\xb5\x02\x12\x0e\n\tCXX_CLASS\x10\xb6\x02\x12\x0e\n\tCONSTEXPR\x10\xb7\x02\x12\x11\n\x0cTHREAD_LOCAL\x10\xb9\x02\x12\x0c\n\x07NULLPTR\x10\xba\x02\x12\t\n\x04VOID\x10\xc6\x02\x12\x0b\n\x06RETURN\x10\xc7\x02\x12\x0c\n\x07INCLUDE\x10\xc8\x02\x12\x0b\n\x06\x44\x45\x46INE\x10\xc9\x02\x12\t\n\x04\x45LIF\x10\xca\x02\x12\n\n\x05\x45NDIF\x10\xcb\x02\x12\x0e\n\tERRORPREC\x10\xcc\x02\x12\x0c\n\x07WARNING\x10\xcd\x02\x12\n\n\x05IFDEF\x10\xce\x02\x12\x0b\n\x06IFNDEF\x10\xcf\x02\x12\t\n\x04LINE\x10\xd0\x02\x12\x0b\n\x06PRAGMA\x10\xd1\x02\x12\n\n\x05UNDEF\x10\xd2\x02\x12\x0b\n\x06INLINE\x10\xd3\x02\x12\x14\n\x0fMACRO_TYPE_NAME\x10\xd4\x02\x12\x0f\n\nMACRO_CASE\x10\xd5\x02\x12\x10\n\x0bMACRO_LABEL\x10\xd6\x02\x12\x0e\n\tSPECIFIER\x10\xd8\x02\x12\x08\n\x03TRY\x10\xd9\x02\x12\n\n\x05\x43\x41TCH\x10\xda\x02\x12\n\n\x05THROW\x10\xdb\x02\x12\x0b\n\x06THROWS\x10\xdc\x02\x12\x0b\n\x06PUBLIC\x10\xde\x02\x12\x0c\n\x07PRIVATE\x10\xdf\x02\x12\x0e\n\tPROTECTED\x10\xe0\x02\x12\x0c\n\x07VIRTUAL\x10\xe1\x02\x12\r\n\x08\x45XPLICIT\x10\xe4\x02\x12\x0c\n\x07\x46OREVER\x10\xe5\x02\x12\x0b\n\x06SIGNAL\x10\xe6\x02\x12\t\n\x04\x45MIT\x10\xe7\x02\x12\x08\n\x03NEW\x10\xeb\x02\x12\x0b\n\x06\x44\x45LETE\x10\xec\x02\x12\x0b\n\x06STATIC\x10\xed\x02\x12\n\n\x05\x43ONST\x10\xee\x02\x12\x0c\n\x07MUTABLE\x10\xef\x02\x12\r\n\x08VOLATILE\x10\xf0\x02\x12\x0e\n\tTRANSIENT\x10\xf1\x02\x12\x0c\n\x07\x46INALLY\x10\xf4\x02\x12\n\n\x05\x46INAL\x10\xf8\x02\x12\r\n\x08\x41\x42STRACT\x10\xf9\x02\x12\n\n\x05SUPER\x10\xfa\x02\x12\x11\n\x0cSYNCHRONIZED\x10\xfb\x02\x12\x0b\n\x06NATIVE\x10\xfc\x02\x12\r\n\x08STRICTFP\x10\xfd\x02\x12\x10\n\x0bNULLLITERAL\x10\xfe\x02\x12\x0b\n\x06\x41SSERT\x10\xff\x02\x12\x0c\n\x07\x46OREACH\x10\x80\x03\x12\x08\n\x03REF\x10\x81\x03\x12\x08\n\x03OUT\x10\x82\x03\x12\t\n\x04LOCK\x10\x84\x03\x12\x07\n\x02IS\x10\x85\x03\x12\r\n\x08INTERNAL\x10\x86\x03\x12\x0b\n\x06SEALED\x10\x87\x03\x12\r\n\x08OVERRIDE\x10\x88\x03\x12\r\n\x08IMPLICIT\x10\x89\x03\x12\x0f\n\nSTACKALLOC\x10\x8a\x03\x12\x07\n\x02\x41S\x10\x8b\x03\x12\r\n\x08\x44\x45LEGATE\x10\x8c\x03\x12\n\n\x05\x46IXED\x10\x8d\x03\x12\x0c\n\x07\x43HECKED\x10\x8e\x03\x12\x0e\n\tUNCHECKED\x10\x8f\x03\x12\x0b\n\x06REGION\x10\x90\x03\x12\x0e\n\tENDREGION\x10\x91\x03\x12\x0b\n\x06UNSAFE\x10\x92\x03\x12\r\n\x08READONLY\x10\x93\x03\x12\x08\n\x03GET\x10\x94\x03\x12\x08\n\x03SET\x10\x95\x03\x12\x08\n\x03\x41\x44\x44\x10\x96\x03\x12\x0b\n\x06REMOVE\x10\x97\x03\x12\n\n\x05YIELD\x10\x98\x03\x12\x0c\n\x07PARTIAL\x10\x99\x03\x12\n\n\x05\x41WAIT\x10\x9a\x03\x12\n\n\x05\x41SYNC\x10\x9c\x03\x12\t\n\x04THIS\x10\x9d\x03\x12\x0b\n\x06PARAMS\x10\x9e\x03\x12\n\n\x05\x41LIAS\x10\xa0\x03\x12\x0e\n\tASCENDING\x10\xa6\x03\x12\x0f\n\nDESCENDING\x10\xa7\x03\x12\x10\n\x0b\x41TINTERFACE\x10\xae\x03\x12\x15\n\x10\x41TIMPLEMENTATION\x10\xaf\x03\x12\n\n\x05\x41TEND\x10\xb0\x03\x12\x0f\n\nATPROTOCOL\x10\xb1\x03\x12\x0f\n\nATREQUIRED\x10\xb2\x03\x12\x0f\n\nATOPTIONAL\x10\xb3\x03\x12\x0c\n\x07\x41TCLASS\x10\xb9\x03\x12\t\n\x04WEAK\x10\xbb\x03\x12\x0b\n\x06STRONG\x10\xbc\x03\x12\x0c\n\x07OMP_OMP\x10\xc0\x03\x12\x12\n\rSPECIAL_CHARS\x10\xc1\x03\"Q\n\x08\x44iffType\x12\x0b\n\x07MATCHED\x10\x00\x12\t\n\x05\x41\x44\x44\x45\x44\x10\x01\x12\x0b\n\x07\x44\x45LETED\x10\x02\x12\x10\n\x0c\x43HANGED_FROM\x10\x03\x12\x0e\n\nCHANGED_TO\x10\x04\x42\x06\n\x04typeB\x07\n\x05\x65xtra\"\xc4\x04\n\x05\x44\x65lta\x12\x0b\n\x03src\x18\x01 \x01(\t\x12\x0b\n\x03\x64st\x18\x02 \x01(\t\x12\x1e\n\x04\x64iff\x18\x03 \x03(\x0b\x32\x10.fast.Delta.Diff\x1a\x80\x04\n\x04\x44iff\x12(\n\x04type\x18\x01 \x01(\x0e\x32\x1a.fast.Delta.Diff.DeltaType\x12\'\n\x05match\x18\x02 \x01(\x0b\x32\x16.fast.Delta.Diff.MatchH\x00\x12#\n\x03\x61\x64\x64\x18\x03 \x01(\x0b\x32\x14.fast.Delta.Diff.AddH\x00\x12#\n\x03\x64\x65l\x18\x04 \x01(\x0b\x32\x14.fast.Delta.Diff.DelH\x00\x12%\n\x04move\x18\x05 \x01(\x0b\x32\x15.fast.Delta.Diff.MoveH\x00\x12)\n\x06update\x18\x06 \x01(\x0b\x32\x17.fast.Delta.Diff.UpdateH\x00\x1a!\n\x05Match\x12\x0b\n\x03src\x18\x01 \x01(\x05\x12\x0b\n\x03\x64st\x18\x02 \x01(\x05\x1a\x31\n\x03\x41\x64\x64\x12\x0b\n\x03src\x18\x01 \x01(\x05\x12\x0b\n\x03\x64st\x18\x02 \x01(\x05\x12\x10\n\x08position\x18\x03 \x01(\x05\x1a\x12\n\x03\x44\x65l\x12\x0b\n\x03src\x18\x01 \x01(\x05\x1a\x32\n\x04Move\x12\x0b\n\x03src\x18\x01 \x01(\x05\x12\x0b\n\x03\x64st\x18\x02 \x01(\x05\x12\x10\n\x08position\x18\x03 \x01(\x05\x1a\"\n\x06Update\x12\x0b\n\x03src\x18\x01 \x01(\x05\x12\x0b\n\x03\x64st\x18\x02 \x01(\x05\">\n\tDeltaType\x12\t\n\x05MATCH\x10\x00\x12\x07\n\x03\x41\x44\x44\x10\x01\x12\x07\n\x03\x44\x45L\x10\x02\x12\x08\n\x04MOVE\x10\x03\x12\n\n\x06UPDATE\x10\x04\x42\x07\n\x05\x64\x65lta\"\xa8\x03\n\x05Pairs\x12\x1e\n\x04pair\x18\x01 \x03(\x0b\x32\x10.fast.Pairs.Pair\x1a\xfe\x02\n\x04Pair\x12#\n\x04left\x18\x01 \x01(\x0b\x32\x15.fast.Pairs.Pair.Diff\x12$\n\x05right\x18\x02 \x01(\x0b\x32\x15.fast.Pairs.Pair.Diff\x12(\n\x04type\x18\x03 \x01(\x0e\x32\x1a.fast.Pairs.Pair.CloneType\x1a\xd7\x01\n\x04\x44iff\x12\x0f\n\x07project\x18\x01 \x01(\t\x12\x11\n\tleft_line\x18\x02 \x01(\x05\x12\x13\n\x0bleft_column\x18\x03 \x01(\x05\x12\x12\n\nright_line\x18\x04 \x01(\x05\x12\x14\n\x0cright_column\x18\x05 \x01(\x05\x12\x1f\n\x08old_code\x18\x06 \x01(\x0b\x32\r.fast.Element\x12\x1f\n\x08new_code\x18\x07 \x01(\x0b\x32\r.fast.Element\x12\x0c\n\x04hash\x18\x08 \x01(\t\x12\x1c\n\x06slices\x18\t \x01(\x0b\x32\x0c.fast.Slices\"\'\n\tCloneType\x12\t\n\x05MAYBE\x10\x00\x12\x07\n\x03YES\x10\x01\x12\x06\n\x02NO\x10\x02\"\xac\x06\n\x03Log\x12 \n\x06\x63ommit\x18\x01 \x03(\x0b\x32\x10.fast.Log.Commit\x12 \n\x06\x61uthor\x18\x02 \x03(\x0b\x32\x10.fast.Log.Author\x1a\xad\x05\n\x06\x43ommit\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04text\x18\x02 \x01(\x0c\x12\x11\n\tauthor_id\x18\x03 \x01(\x05\x12\x13\n\x0b\x61uthor_date\x18\x04 \x01(\t\x12/\n\tcommitter\x18\x05 \x01(\x0b\x32\x1a.fast.Log.Commit.CommitterH\x00\x12#\n\x04\x64iff\x18\x06 \x03(\x0b\x32\x15.fast.Log.Commit.Diff\x12\x1b\n\x05slice\x18\x07 \x01(\x0b\x32\x0c.fast.Slices\x1a\x36\n\tCommitter\x12\x14\n\x0c\x63ommitter_id\x18\x01 \x01(\x05\x12\x13\n\x0b\x63ommit_date\x18\x02 \x01(\t\x1a\xac\x03\n\x04\x44iff\x12\t\n\x01\x61\x18\x01 \x01(\t\x12\t\n\x01\x62\x18\x02 \x01(\t\x12\x0e\n\x06is_new\x18\x03 \x01(\x08\x12\x0f\n\x07is_code\x18\x04 \x01(\t\x12\x12\n\nindex_from\x18\x05 \x01(\t\x12\x10\n\x08index_to\x18\x06 \x01(\t\x12\x0c\n\x04mode\x18\x07 \x01(\t\x12(\n\x04hunk\x18\x08 \x03(\x0b\x32\x1a.fast.Log.Commit.Diff.Hunk\x1a\x8e\x02\n\x04Hunk\x12\x13\n\x0b\x66rom_lineno\x18\x01 \x01(\x05\x12\x13\n\x0b\x66rom_column\x18\x02 \x01(\x05\x12\x11\n\tto_lineno\x18\x03 \x01(\x05\x12\x11\n\tto_column\x18\x04 \x01(\x05\x12\x0f\n\x07\x63ontext\x18\x05 \x01(\t\x12\x1e\n\x07\x65lement\x18\x06 \x03(\x0b\x32\r.fast.Element\x12/\n\x03mod\x18\x07 \x03(\x0b\x32\".fast.Log.Commit.Diff.Hunk.ModLine\x12\x1b\n\x05slice\x18\x08 \x01(\x0b\x32\x0c.fast.Slices\x1a\x37\n\x07ModLine\x12\x0c\n\x04line\x18\x01 \x01(\x0c\x12\x0e\n\x06is_add\x18\x02 \x01(\x08\x12\x0e\n\x06is_del\x18\x03 \x01(\x08\x42\x07\n\x05\x65xtra\x1a\x31\n\x06\x41uthor\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\x0c\x12\r\n\x05\x65mail\x18\x03 \x01(\t\"\xc3\x07\n\x06Slices\x12!\n\x05slice\x18\x01 \x03(\x0b\x32\x12.fast.Slices.Slice\x1a\x95\x07\n\x05Slice\x12+\n\x04\x66ile\x18\x01 \x03(\x0b\x32\x1d.fast.Slices.Slice.SourceFile\x12\x0c\n\x04hash\x18\x02 \x01(\t\x1a\xa1\x06\n\nSourceFile\x12\x38\n\x08\x66unction\x18\x01 \x03(\x0b\x32&.fast.Slices.Slice.SourceFile.Function\x12\x0c\n\x04name\x18\x02 \x01(\t\x12+\n\x04type\x18\x03 \x01(\x0e\x32\x1d.fast.Slices.Slice.ChangeType\x1a\x9d\x05\n\x08\x46unction\x12\x41\n\x08variable\x18\x01 \x03(\x0b\x32/.fast.Slices.Slice.SourceFile.Function.Variable\x12\x0c\n\x04name\x18\x02 \x01(\t\x12+\n\x04type\x18\x03 \x01(\x0e\x32\x1d.fast.Slices.Slice.ChangeType\x1a\x92\x04\n\x08Variable\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x45\n\x03pos\x18\x02 \x01(\x0b\x32\x38.fast.Slices.Slice.SourceFile.Function.Variable.Position\x12+\n\x04type\x18\x03 \x01(\x0e\x32\x1d.fast.Slices.Slice.ChangeType\x12\x46\n\x04\x64\x65\x66n\x18\x04 \x03(\x0b\x32\x38.fast.Slices.Slice.SourceFile.Function.Variable.Position\x12\x45\n\x03use\x18\x05 \x03(\x0b\x32\x38.fast.Slices.Slice.SourceFile.Function.Variable.Position\x12\x0c\n\x04\x64var\x18\x06 \x03(\t\x12\r\n\x05\x61lias\x18\x07 \x03(\t\x12K\n\x05\x63\x66unc\x18\x08 \x03(\x0b\x32<.fast.Slices.Slice.SourceFile.Function.Variable.FunctionDecl\x1a]\n\x08Position\x12\x0e\n\x06lineno\x18\x01 \x01(\x05\x12+\n\x04type\x18\x02 \x01(\x0e\x32\x1d.fast.Slices.Slice.ChangeType\x12\x14\n\x0c\x64\x65lta_lineno\x18\x05 \x01(\x05\x1a,\n\x0c\x46unctionDecl\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0e\n\x06lineno\x18\x02 \x01(\x05\"-\n\nChangeType\x12\r\n\tUNCHANGED\x10\x00\x12\x07\n\x03\x41\x44\x44\x10\x01\x12\x07\n\x03\x44\x45L\x10\x02\"\xd6\x01\n\x04\x42ugs\x12\x12\n\nrepository\x18\x01 \x01(\t\x12\x1b\n\x03\x62ug\x18\x02 \x03(\x0b\x32\x0e.fast.Bugs.Bug\x1a\x9c\x01\n\x03\x42ug\x12\n\n\x02id\x18\x01 \x01(\x0c\x12\x10\n\x08opendate\x18\x02 \x01(\x0c\x12\x0f\n\x07\x66ixdate\x18\x03 \x01(\x0c\x12$\n\x07\x62uginfo\x18\x04 \x01(\x0b\x32\x13.fast.Bugs.Bug.Info\x12\x12\n\nfixed_file\x18\x05 \x03(\x0c\x1a,\n\x04Info\x12\x0f\n\x07summary\x18\x01 \x01(\x0c\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\x0c\"\xc8\x01\n\x04\x44\x61ta\x12 \n\x07\x65lement\x18\x01 \x01(\x0b\x32\r.fast.ElementH\x00\x12\x18\n\x03log\x18\x02 \x01(\x0b\x32\t.fast.LogH\x00\x12\x1c\n\x05\x64\x65lta\x18\x03 \x01(\x0b\x32\x0b.fast.DeltaH\x00\x12\x1c\n\x05pairs\x18\x04 \x01(\x0b\x32\x0b.fast.PairsH\x00\x12\x1e\n\x06slices\x18\x05 \x01(\x0b\x32\x0c.fast.SlicesH\x00\x12\x1a\n\x04\x62ugs\x18\x06 \x01(\x0b\x32\n.fast.BugsH\x00\x42\x0c\n\nRecordType*\xbb\x12\n\tSmaliKind\x12\x0e\n\nsmali_file\x10\x00\x12\x0e\n\nclass_spec\x10\x01\x12\x0e\n\nsuper_spec\x10\x02\x12\x13\n\x0fimplements_spec\x10\x03\x12\x0f\n\x0bsource_spec\x10\x04\x12\x0f\n\x0b\x61\x63\x63\x65ss_list\x10\x05\x12\t\n\x05\x66ield\x10\x06\x12\n\n\x06method\x10\x07\x12\x1d\n\x19statements_and_directives\x10\x08\x12\x17\n\x13ordered_method_item\x10\t\x12\x17\n\x13registers_directive\x10\n\x12\x14\n\x10param_list_or_id\x10\x0b\x12\x0f\n\x0bsimple_name\x10\x0c\x12\x0f\n\x0bmember_name\x10\r\x12\x14\n\x10method_prototype\x10\x0e\x12#\n\x1fparam_list_or_id_primitive_type\x10\x0f\x12\x0e\n\nparam_list\x10\x10\x12\x14\n\x10\x61rray_descriptor\x10\x11\x12\x13\n\x0ftype_descriptor\x10\x12\x12\x1b\n\x17nonvoid_type_descriptor\x10\x13\x12\x1d\n\x19reference_type_descriptor\x10\x14\x12\x13\n\x0finteger_literal\x10\x15\x12\x11\n\rfloat_literal\x10\x16\x12\x12\n\x0e\x64ouble_literal\x10\x17\x12\x0b\n\x07literal\x10\x18\x12\x1a\n\x16parsed_integer_literal\x10\x19\x12\x14\n\x10integral_literal\x10\x1a\x12\x17\n\x13\x66ixed_32bit_literal\x10\x1b\x12\x11\n\rfixed_literal\x10\x1c\x12\x11\n\rarray_literal\x10\x1d\x12\x16\n\x12\x61nnotation_element\x10\x1e\x12\x0e\n\nannotation\x10\x1f\x12\x11\n\rsubannotation\x10 \x12\x10\n\x0c\x65num_literal\x10!\x12\x1d\n\x19type_field_method_literal\x10\"\x12\x14\n\x10method_reference\x10#\x12\x13\n\x0f\x66ield_reference\x10$\x12\t\n\x05label\x10%\x12\r\n\tlabel_ref\x10&\x12\x11\n\rregister_list\x10\'\x12\x12\n\x0eregister_range\x10(\x12 \n\x1cverification_error_reference\x10)\x12\x13\n\x0f\x63\x61tch_directive\x10*\x12\x16\n\x12\x63\x61tchall_directive\x10+\x12\x17\n\x13parameter_directive\x10,\x12\x13\n\x0f\x64\x65\x62ug_directive\x10-\x12\x12\n\x0eline_directive\x10.\x12\x13\n\x0flocal_directive\x10/\x12\x17\n\x13\x65nd_local_directive\x10\x30\x12\x1b\n\x17restart_local_directive\x10\x31\x12\x16\n\x12prologue_directive\x10\x32\x12\x16\n\x12\x65pilogue_directive\x10\x33\x12\x14\n\x10source_directive\x10\x34\x12\x19\n\x15instruction_format12x\x10\x35\x12\x19\n\x15instruction_format22s\x10\x36\x12\x19\n\x15instruction_format31i\x10\x37\x12\x0f\n\x0binstruction\x10\x38\x12\x12\n\x0einsn_format10t\x10\x39\x12\x12\n\x0einsn_format10x\x10:\x12\x17\n\x13insn_format10x_odex\x10;\x12\x12\n\x0einsn_format11n\x10<\x12\x12\n\x0einsn_format11x\x10=\x12\x12\n\x0einsn_format12x\x10>\x12\x13\n\x0finsn_format20bc\x10?\x12\x12\n\x0einsn_format20t\x10@\x12\x18\n\x14insn_format21c_field\x10\x41\x12\x1d\n\x19insn_format21c_field_odex\x10\x42\x12\x19\n\x15insn_format21c_string\x10\x43\x12\x17\n\x13insn_format21c_type\x10\x44\x12\x13\n\x0finsn_format21ih\x10\x45\x12\x13\n\x0finsn_format21lh\x10\x46\x12\x12\n\x0einsn_format21s\x10G\x12\x12\n\x0einsn_format21t\x10H\x12\x12\n\x0einsn_format22b\x10I\x12\x18\n\x14insn_format22c_field\x10J\x12\x1d\n\x19insn_format22c_field_odex\x10K\x12\x17\n\x13insn_format22c_type\x10L\x12\x19\n\x15insn_format22cs_field\x10M\x12\x12\n\x0einsn_format22s\x10N\x12\x12\n\x0einsn_format22t\x10O\x12\x12\n\x0einsn_format22x\x10P\x12\x12\n\x0einsn_format23x\x10Q\x12\x12\n\x0einsn_format30t\x10R\x12\x12\n\x0einsn_format31c\x10S\x12\x12\n\x0einsn_format31i\x10T\x12\x12\n\x0einsn_format31t\x10U\x12\x12\n\x0einsn_format32x\x10V\x12\x19\n\x15insn_format35c_method\x10W\x12\x17\n\x13insn_format35c_type\x10X\x12\x1e\n\x1ainsn_format35c_method_odex\x10Y\x12\x1a\n\x16insn_format35mi_method\x10Z\x12\x1a\n\x16insn_format35ms_method\x10[\x12\x19\n\x15insn_format3rc_method\x10\\\x12\x1e\n\x1ainsn_format3rc_method_odex\x10]\x12\x17\n\x13insn_format3rc_type\x10^\x12\x1a\n\x16insn_format3rmi_method\x10_\x12\x1a\n\x16insn_format3rms_method\x10`\x12\x1a\n\x16insn_format45cc_method\x10\x61\x12\x1a\n\x16insn_format4rcc_method\x10\x62\x12\x12\n\x0einsn_format51l\x10\x63\x12\x1d\n\x19insn_array_data_directive\x10\x64\x12 \n\x1cinsn_packed_switch_directive\x10\x65\x12 \n\x1cinsn_sparse_switch_directive\x10\x66*\xc1\n\n\x0bPython3Kind\x12\x10\n\x0csingle_input\x10\x00\x12\x0e\n\nfile_input\x10\x01\x12\x0e\n\neval_input\x10\x02\x12\r\n\tdecorator\x10\x03\x12\x0e\n\ndecorators\x10\x04\x12\r\n\tdecorated\x10\x05\x12\x11\n\rasync_funcdef\x10\x06\x12\x0b\n\x07\x66uncdef\x10\x07\x12\x0e\n\nparameters\x10\x08\x12\x11\n\rtypedargslist\x10\t\x12\n\n\x06tfpdef\x10\n\x12\x0f\n\x0bvarargslist\x10\x0b\x12\n\n\x06vfpdef\x10\x0c\x12\x08\n\x04stmt\x10\r\x12\x0f\n\x0bsimple_stmt\x10\x0e\x12\x0e\n\nsmall_stmt\x10\x0f\x12\r\n\texpr_stmt\x10\x10\x12\r\n\tannassign\x10\x11\x12\x16\n\x12testlist_star_expr\x10\x12\x12\r\n\taugassign\x10\x13\x12\x0c\n\x08\x64\x65l_stmt\x10\x14\x12\r\n\tpass_stmt\x10\x15\x12\r\n\tflow_stmt\x10\x16\x12\x0e\n\nbreak_stmt\x10\x17\x12\x11\n\rcontinue_stmt\x10\x18\x12\x0f\n\x0breturn_stmt\x10\x19\x12\x0e\n\nyield_stmt\x10\x1a\x12\x0e\n\nraise_stmt\x10\x1b\x12\x0f\n\x0bimport_stmt\x10\x1c\x12\x0f\n\x0bimport_name\x10\x1d\x12\x0f\n\x0bimport_from\x10\x1e\x12\x12\n\x0eimport_as_name\x10\x1f\x12\x12\n\x0e\x64otted_as_name\x10 \x12\x13\n\x0fimport_as_names\x10!\x12\x13\n\x0f\x64otted_as_names\x10\"\x12\x0f\n\x0b\x64otted_name\x10#\x12\x0f\n\x0bglobal_stmt\x10$\x12\x11\n\rnonlocal_stmt\x10%\x12\x0f\n\x0b\x61ssert_stmt\x10&\x12\x11\n\rcompound_stmt\x10\'\x12\x0e\n\nasync_stmt\x10(\x12\x0b\n\x07if_stmt\x10)\x12\x0e\n\nwhile_stmt\x10*\x12\x0c\n\x08\x66or_stmt\x10+\x12\x0c\n\x08try_stmt\x10,\x12\r\n\twith_stmt\x10-\x12\r\n\twith_item\x10.\x12\x11\n\rexcept_clause\x10/\x12\t\n\x05suite\x10\x30\x12\x08\n\x04test\x10\x31\x12\x0f\n\x0btest_nocond\x10\x32\x12\x0b\n\x07lambdef\x10\x33\x12\x12\n\x0elambdef_nocond\x10\x34\x12\x0b\n\x07or_test\x10\x35\x12\x0c\n\x08\x61nd_test\x10\x36\x12\x0c\n\x08not_test\x10\x37\x12\x0e\n\ncomparison\x10\x38\x12\x0b\n\x07\x63omp_op\x10\x39\x12\r\n\tstar_expr\x10:\x12\x08\n\x04\x65xpr\x10;\x12\x0c\n\x08xor_expr\x10<\x12\x0c\n\x08\x61nd_expr\x10=\x12\x0e\n\nshift_expr\x10>\x12\x0e\n\narith_expr\x10?\x12\x08\n\x04term\x10@\x12\n\n\x06\x66\x61\x63tor\x10\x41\x12\t\n\x05power\x10\x42\x12\r\n\tatom_expr\x10\x43\x12\x08\n\x04\x61tom\x10\x44\x12\x11\n\rtestlist_comp\x10\x45\x12\x0b\n\x07trailer\x10\x46\x12\x11\n\rsubscriptlist\x10G\x12\r\n\tsubscript\x10H\x12\x0b\n\x07sliceop\x10I\x12\x0c\n\x08\x65xprlist\x10J\x12\x0c\n\x08testlist\x10K\x12\x12\n\x0e\x64ictorsetmaker\x10L\x12\x0c\n\x08\x63lassdef\x10M\x12\x0b\n\x07\x61rglist\x10N\x12\x0c\n\x08\x61rgument\x10O\x12\r\n\tcomp_iter\x10P\x12\x0c\n\x08\x63omp_for\x10Q\x12\x0b\n\x07\x63omp_if\x10R\x12\x11\n\rencoding_decl\x10S\x12\x0e\n\nyield_expr\x10T\x12\r\n\tyield_arg\x10Ub\x06proto3')
+  serialized_pb=_b('\n\nfast.proto\x12\x04\x66\x61st\"\xd6\x39\n\x07\x45lement\x12\"\n\x04kind\x18\x01 \x01(\x0e\x32\x12.fast.Element.KindH\x00\x12%\n\nsmali_kind\x18\x02 \x01(\x0e\x32\x0f.fast.SmaliKindH\x00\x12)\n\x0cpython3_kind\x18\x03 \x01(\x0e\x32\x11.fast.Python3KindH\x00\x12+\n\rsolidity_kind\x18\x04 \x01(\x0e\x32\x12.fast.SolidityKindH\x00\x12\x0c\n\x04text\x18\x05 \x01(\x0c\x12\x0b\n\x03pos\x18\x06 \x01(\x05\x12\x0e\n\x06length\x18\x07 \x01(\x05\x12\x1c\n\x05\x63hild\x18\x08 \x03(\x0b\x32\r.fast.Element\x12\x0c\n\x04tail\x18\t \x01(\x0c\x12\"\n\x04unit\x18\n \x01(\x0b\x32\x12.fast.Element.UnitH\x01\x12(\n\x07literal\x18\x0b \x01(\x0b\x32\x15.fast.Element.LiteralH\x01\x12\x0c\n\x04line\x18\x0c \x01(\x05\x12\x0e\n\x06\x63olumn\x18\r \x01(\x05\x12\r\n\x05label\x18\x0e \x01(\x02\x12&\n\x06\x63hange\x18\x0f \x01(\x0e\x32\x16.fast.Element.DiffType\x12\x0c\n\x04keep\x18\x10 \x01(\x08\x1a\xdc\x01\n\x04Unit\x12\x10\n\x08\x66ilename\x18\x01 \x01(\t\x12\x10\n\x08revision\x18\x02 \x01(\t\x12\x31\n\x08language\x18\x03 \x01(\x0e\x32\x1f.fast.Element.Unit.LanguageType\x12\x0c\n\x04item\x18\x04 \x01(\x05\"o\n\x0cLanguageType\x12\t\n\x05\x44UMMY\x10\x00\x12\x07\n\x03\x41LL\x10\x01\x12\x06\n\x02OO\x10\x02\x12\x07\n\x03\x43XX\x10\x03\x12\x05\n\x01\x43\x10\x04\x12\x0c\n\x08\x43_FAMILY\x10\x05\x12\x08\n\x04JAVA\x10\x06\x12\n\n\x06\x43SHARP\x10\x07\x12\x0f\n\x0bOBJECTIVE_C\x10\x08\x1a\xab\x01\n\x07Literal\x12/\n\x04type\x18\x01 \x01(\x0e\x32!.fast.Element.Literal.LiteralType\"o\n\x0bLiteralType\x12\x0e\n\ndummy_type\x10\x00\x12\x0f\n\x0bnumber_type\x10\x01\x12\r\n\tchar_type\x10\x02\x12\x0f\n\x0bstring_type\x10\x03\x12\x10\n\x0c\x62oolean_type\x10\x04\x12\r\n\tnull_type\x10\x05\"\xae\x32\n\x04Kind\x12\r\n\tUNIT_KIND\x10\x00\x12\x08\n\x04\x44\x45\x43L\x10\x01\x12\r\n\tDECL_STMT\x10\x02\x12\x08\n\x04INIT\x10\x03\x12\x08\n\x04\x45XPR\x10\x04\x12\r\n\tEXPR_STMT\x10\x05\x12\x0b\n\x07\x43OMMENT\x10\x06\x12\x08\n\x04\x43\x41LL\x10\x07\x12\x0b\n\x07\x43ONTROL\x10\x08\x12\x08\n\x04INCR\x10\t\x12\x08\n\x04NONE\x10\n\x12\x0c\n\x08VARIABLE\x10\x0b\x12\x0c\n\x08\x46UNCTION\x10\x0c\x12\x11\n\rFUNCTION_DECL\x10\r\x12\x0f\n\x0b\x43ONSTRUCTOR\x10\x0e\x12\x14\n\x10\x43ONSTRUCTOR_DECL\x10\x0f\x12\x0e\n\nDESTRUCTOR\x10\x10\x12\x13\n\x0f\x44\x45STRUCTOR_DECL\x10\x11\x12\t\n\x05MACRO\x10\x12\x12\x10\n\x0cSINGLE_MACRO\x10\x13\x12\x10\n\x0cNULLOPERATOR\x10\x14\x12\r\n\tENUM_DEFN\x10\x15\x12\r\n\tENUM_DECL\x10\x16\x12\x14\n\x10GLOBAL_ATTRIBUTE\x10\x17\x12\x15\n\x11PROPERTY_ACCESSOR\x10\x18\x12\x1a\n\x16PROPERTY_ACCESSOR_DECL\x10\x19\x12\x0e\n\nEXPRESSION\x10\x1a\x12\x0e\n\nCLASS_DEFN\x10\x1b\x12\x0e\n\nCLASS_DECL\x10\x1c\x12\x0e\n\nUNION_DEFN\x10\x1d\x12\x0e\n\nUNION_DECL\x10\x1e\x12\x0f\n\x0bSTRUCT_DEFN\x10\x1f\x12\x0f\n\x0bSTRUCT_DECL\x10 \x12\x12\n\x0eINTERFACE_DEFN\x10!\x12\x12\n\x0eINTERFACE_DECL\x10\"\x12\x11\n\rACCESS_REGION\x10#\x12\t\n\x05USING\x10$\x12\x15\n\x11OPERATOR_FUNCTION\x10%\x12\x1a\n\x16OPERATOR_FUNCTION_DECL\x10&\x12\t\n\x05\x45VENT\x10\'\x12\x0c\n\x08PROPERTY\x10(\x12\x13\n\x0f\x41NNOTATION_DEFN\x10)\x12\x13\n\x0fGLOBAL_TEMPLATE\x10*\x12\x08\n\x04UNIT\x10+\x12\x16\n\x12TART_ELEMENT_TOKEN\x10,\x12\x07\n\x03NOP\x10-\x12\n\n\x06STRING\x10.\x12\x08\n\x04\x43HAR\x10/\x12\x0b\n\x07LITERAL\x10\x30\x12\x0b\n\x07\x42OOLEAN\x10\x31\x12\x08\n\x04NULL\x10\x32\x12\x0b\n\x07\x43OMPLEX\x10\x33\x12\x0c\n\x08OPERATOR\x10\x34\x12\x0c\n\x08MODIFIER\x10\x35\x12\x08\n\x04NAME\x10\x36\x12\t\n\x05ONAME\x10\x37\x12\t\n\x05\x43NAME\x10\x38\x12\x08\n\x04TYPE\x10\x39\x12\x0c\n\x08TYPEPREV\x10:\x12\r\n\tCONDITION\x10;\x12\t\n\x05\x42LOCK\x10<\x12\x10\n\x0cPSEUDO_BLOCK\x10=\x12\t\n\x05INDEX\x10>\x12\x08\n\x04\x45NUM\x10?\x12\x14\n\x10\x45NUM_DECLARATION\x10@\x12\x10\n\x0cIF_STATEMENT\x10\x41\x12\x0b\n\x07TERNARY\x10\x42\x12\x08\n\x04THEN\x10\x43\x12\x08\n\x04\x45LSE\x10\x44\x12\n\n\x06\x45LSEIF\x10\x45\x12\x13\n\x0fWHILE_STATEMENT\x10\x46\x12\x10\n\x0c\x44O_STATEMENT\x10G\x12\x11\n\rFOR_STATEMENT\x10H\x12\x15\n\x11\x46OREACH_STATEMENT\x10I\x12\x0f\n\x0b\x46OR_CONTROL\x10J\x12\x16\n\x12\x46OR_INITIALIZATION\x10K\x12\x11\n\rFOR_CONDITION\x10L\x12\x11\n\rFOR_INCREMENT\x10M\x12\x14\n\x10\x46OR_LIKE_CONTROL\x10N\x12\x18\n\x14\x45XPRESSION_STATEMENT\x10O\x12\x11\n\rFUNCTION_CALL\x10P\x12\x19\n\x15\x44\x45\x43LARATION_STATEMENT\x10Q\x12\x0f\n\x0b\x44\x45\x43LARATION\x10R\x12\x1e\n\x1a\x44\x45\x43LARATION_INITIALIZATION\x10S\x12\x15\n\x11\x44\x45\x43LARATION_RANGE\x10T\x12\t\n\x05RANGE\x10U\x12\x12\n\x0eGOTO_STATEMENT\x10V\x12\x16\n\x12\x43ONTINUE_STATEMENT\x10W\x12\x13\n\x0f\x42REAK_STATEMENT\x10X\x12\x13\n\x0fLABEL_STATEMENT\x10Y\x12\t\n\x05LABEL\x10Z\x12\n\n\x06SWITCH\x10[\x12\x08\n\x04\x43\x41SE\x10\\\x12\x0b\n\x07\x44\x45\x46\x41ULT\x10]\x12\x17\n\x13\x46UNCTION_DEFINITION\x10^\x12\x18\n\x14\x46UNCTION_DECLARATION\x10_\x12\n\n\x06LAMBDA\x10`\x12\x13\n\x0f\x46UNCTION_LAMBDA\x10\x61\x12\x16\n\x12\x46UNCTION_SPECIFIER\x10\x62\x12\x14\n\x10RETURN_STATEMENT\x10\x63\x12\x12\n\x0ePARAMETER_LIST\x10\x64\x12\r\n\tPARAMETER\x10\x65\x12\x14\n\x10KRPARAMETER_LIST\x10\x66\x12\x0f\n\x0bKRPARAMETER\x10g\x12\x11\n\rARGUMENT_LIST\x10h\x12\x0c\n\x08\x41RGUMENT\x10i\x12\x19\n\x15PSEUDO_PARAMETER_LIST\x10j\x12\x1a\n\x16INDEXER_PARAMETER_LIST\x10k\x12\t\n\x05\x43LASS\x10l\x12\x15\n\x11\x43LASS_DECLARATION\x10m\x12\n\n\x06STRUCT\x10n\x12\x16\n\x12STRUCT_DECLARATION\x10o\x12\t\n\x05UNION\x10p\x12\x15\n\x11UNION_DECLARATION\x10q\x12\x13\n\x0f\x44\x45RIVATION_LIST\x10r\x12\x11\n\rPUBLIC_ACCESS\x10s\x12\x19\n\x15PUBLIC_ACCESS_DEFAULT\x10t\x12\x12\n\x0ePRIVATE_ACCESS\x10u\x12\x1a\n\x16PRIVATE_ACCESS_DEFAULT\x10v\x12\x14\n\x10PROTECTED_ACCESS\x10w\x12\x1c\n\x18PROTECTED_ACCESS_DEFAULT\x10x\x12\x14\n\x10MEMBER_INIT_LIST\x10y\x12\x1e\n\x1aMEMBER_INITIALIZATION_LIST\x10z\x12\x19\n\x15MEMBER_INITIALIZATION\x10{\x12\x1a\n\x16\x43ONSTRUCTOR_DEFINITION\x10|\x12\x1b\n\x17\x43ONSTRUCTOR_DECLARATION\x10}\x12\x19\n\x15\x44\x45STRUCTOR_DEFINITION\x10~\x12\x1a\n\x16\x44\x45STRUCTOR_DECLARATION\x10\x7f\x12\x0b\n\x06\x46RIEND\x10\x80\x01\x12\x14\n\x0f\x43LASS_SPECIFIER\x10\x81\x01\x12\x0e\n\tTRY_BLOCK\x10\x82\x01\x12\x10\n\x0b\x43\x41TCH_BLOCK\x10\x83\x01\x12\x12\n\rFINALLY_BLOCK\x10\x84\x01\x12\x14\n\x0fTHROW_STATEMENT\x10\x85\x01\x12\x14\n\x0fTHROW_SPECIFIER\x10\x86\x01\x12\x19\n\x14THROW_SPECIFIER_JAVA\x10\x87\x01\x12\r\n\x08TEMPLATE\x10\x88\x01\x12\x15\n\x10GENERIC_ARGUMENT\x10\x89\x01\x12\x1a\n\x15GENERIC_ARGUMENT_LIST\x10\x8a\x01\x12\x17\n\x12TEMPLATE_PARAMETER\x10\x8b\x01\x12\x1c\n\x17TEMPLATE_PARAMETER_LIST\x10\x8c\x01\x12\x16\n\x11GENERIC_PARAMETER\x10\x8d\x01\x12\x1b\n\x16GENERIC_PARAMETER_LIST\x10\x8e\x01\x12\x0c\n\x07TYPEDEF\x10\x8f\x01\x12\x08\n\x03\x41SM\x10\x90\x01\x12\x0f\n\nMACRO_CALL\x10\x91\x01\x12\x10\n\x0bSIZEOF_CALL\x10\x92\x01\x12\x0b\n\x06\x45XTERN\x10\x93\x01\x12\x0e\n\tNAMESPACE\x10\x94\x01\x12\x14\n\x0fUSING_DIRECTIVE\x10\x95\x01\x12\x0e\n\tDIRECTIVE\x10\x96\x01\x12\x0b\n\x06\x41TOMIC\x10\x97\x01\x12\x1c\n\x17STATIC_ASSERT_STATEMENT\x10\x98\x01\x12\x16\n\x11GENERIC_SELECTION\x10\x99\x01\x12\x15\n\x10GENERIC_SELECTOR\x10\x9a\x01\x12\x1d\n\x18GENERIC_ASSOCIATION_LIST\x10\x9b\x01\x12\x18\n\x13GENERIC_ASSOCIATION\x10\x9c\x01\x12\x0c\n\x07\x41LIGNAS\x10\x9d\x01\x12\r\n\x08\x44\x45\x43LTYPE\x10\x9e\x01\x12\x0c\n\x07\x43\x41PTURE\x10\x9f\x01\x12\x13\n\x0eLAMBDA_CAPTURE\x10\xa0\x01\x12\r\n\x08NOEXCEPT\x10\xa1\x01\x12\r\n\x08TYPENAME\x10\xa2\x01\x12\x0c\n\x07\x41LIGNOF\x10\xa3\x01\x12\x0b\n\x06TYPEID\x10\xa4\x01\x12\x10\n\x0bSIZEOF_PACK\x10\xa5\x01\x12\x0f\n\nENUM_CLASS\x10\xa6\x01\x12\x1b\n\x16\x45NUM_CLASS_DECLARATION\x10\xa7\x01\x12\x12\n\rREF_QUALIFIER\x10\xa8\x01\x12\x12\n\rSIGNAL_ACCESS\x10\xa9\x01\x12\x16\n\x11\x46OREVER_STATEMENT\x10\xaa\x01\x12\x13\n\x0e\x45MIT_STATEMENT\x10\xab\x01\x12\x12\n\rCPP_DIRECTIVE\x10\xac\x01\x12\x11\n\x0c\x43PP_FILENAME\x10\xad\x01\x12\t\n\x04\x46ILE\x10\xae\x01\x12\x0b\n\x06NUMBER\x10\xaf\x01\x12\x0f\n\nCPP_NUMBER\x10\xb0\x01\x12\x10\n\x0b\x43PP_LITERAL\x10\xb1\x01\x12\x13\n\x0e\x43PP_MACRO_DEFN\x10\xb2\x01\x12\x14\n\x0f\x43PP_MACRO_VALUE\x10\xb3\x01\x12\n\n\x05\x45RROR\x10\xb4\x01\x12\x0e\n\tCPP_ERROR\x10\xb5\x01\x12\x10\n\x0b\x43PP_WARNING\x10\xb6\x01\x12\x0f\n\nCPP_PRAGMA\x10\xb7\x01\x12\x10\n\x0b\x43PP_INCLUDE\x10\xb8\x01\x12\x0f\n\nCPP_DEFINE\x10\xb9\x01\x12\x0e\n\tCPP_UNDEF\x10\xba\x01\x12\r\n\x08\x43PP_LINE\x10\xbb\x01\x12\x0b\n\x06\x43PP_IF\x10\xbc\x01\x12\x0e\n\tCPP_IFDEF\x10\xbd\x01\x12\x0f\n\nCPP_IFNDEF\x10\xbe\x01\x12\r\n\x08\x43PP_THEN\x10\xbf\x01\x12\r\n\x08\x43PP_ELSE\x10\xc0\x01\x12\r\n\x08\x43PP_ELIF\x10\xc1\x01\x12\x0e\n\tCPP_EMPTY\x10\xc2\x01\x12\x0f\n\nCPP_REGION\x10\xc3\x01\x12\x12\n\rCPP_ENDREGION\x10\xc4\x01\x12\x0f\n\nUSING_STMT\x10\xc5\x01\x12\x0b\n\x06\x45SCAPE\x10\xc6\x01\x12\n\n\x05VALUE\x10\xc7\x01\x12\x0f\n\nCPP_IMPORT\x10\xc8\x01\x12\x0e\n\tCPP_ENDIF\x10\xc9\x01\x12\x0b\n\x06MARKER\x10\xca\x01\x12\x10\n\x0b\x45RROR_PARSE\x10\xcb\x01\x12\x0f\n\nERROR_MODE\x10\xcc\x01\x12\x0f\n\nIMPLEMENTS\x10\xcd\x01\x12\x0c\n\x07\x45XTENDS\x10\xce\x01\x12\x0b\n\x06IMPORT\x10\xcf\x01\x12\x0c\n\x07PACKAGE\x10\xd0\x01\x12\x15\n\x10\x41SSERT_STATEMENT\x10\xd1\x01\x12\x0e\n\tINTERFACE\x10\xd2\x01\x12\x1a\n\x15INTERFACE_DECLARATION\x10\xd3\x01\x12\x1b\n\x16SYNCHRONIZED_STATEMENT\x10\xd4\x01\x12\x0f\n\nANNOTATION\x10\xd5\x01\x12\x11\n\x0cSTATIC_BLOCK\x10\xd6\x01\x12\x16\n\x11\x43HECKED_STATEMENT\x10\xd7\x01\x12\x18\n\x13UNCHECKED_STATEMENT\x10\xd8\x01\x12\x0e\n\tATTRIBUTE\x10\xd9\x01\x12\x0b\n\x06TARGET\x10\xda\x01\x12\x15\n\x10UNSAFE_STATEMENT\x10\xdb\x01\x12\x13\n\x0eLOCK_STATEMENT\x10\xdc\x01\x12\x14\n\x0f\x46IXED_STATEMENT\x10\xdd\x01\x12\x0b\n\x06TYPEOF\x10\xde\x01\x12\x14\n\x0fUSING_STATEMENT\x10\xdf\x01\x12\x16\n\x11\x46UNCTION_DELEGATE\x10\xe0\x01\x12\x0f\n\nCONSTRAINT\x10\xe1\x01\x12\t\n\x04LINQ\x10\xe2\x01\x12\t\n\x04\x46ROM\x10\xe3\x01\x12\n\n\x05WHERE\x10\xe4\x01\x12\x0b\n\x06SELECT\x10\xe5\x01\x12\x08\n\x03LET\x10\xe6\x01\x12\x0c\n\x07ORDERBY\x10\xe7\x01\x12\t\n\x04JOIN\x10\xe8\x01\x12\n\n\x05GROUP\x10\xe9\x01\x12\x07\n\x02IN\x10\xea\x01\x12\x07\n\x02ON\x10\xeb\x01\x12\x0b\n\x06\x45QUALS\x10\xec\x01\x12\x07\n\x02\x42Y\x10\xed\x01\x12\t\n\x04INTO\x10\xee\x01\x12\n\n\x05\x45MPTY\x10\xef\x01\x12\x0f\n\nEMPTY_STMT\x10\xf0\x01\x12\r\n\x08RECEIVER\x10\xf1\x01\x12\x0c\n\x07MESSAGE\x10\xf2\x01\x12\r\n\x08SELECTOR\x10\xf3\x01\x12\x12\n\rPROTOCOL_LIST\x10\xf4\x01\x12\r\n\x08\x43\x41TEGORY\x10\xf5\x01\x12\r\n\x08PROTOCOL\x10\xf6\x01\x12\x15\n\x10REQUIRED_DEFAULT\x10\xf7\x01\x12\r\n\x08REQUIRED\x10\xf8\x01\x12\r\n\x08OPTIONAL\x10\xf9\x01\x12\x13\n\x0e\x41TTRIBUTE_LIST\x10\xfa\x01\x12\x0f\n\nSYNTHESIZE\x10\xfb\x01\x12\x0c\n\x07\x44YNAMIC\x10\xfc\x01\x12\x0b\n\x06\x45NCODE\x10\xfd\x01\x12\x14\n\x0f\x41UTORELEASEPOOL\x10\xfe\x01\x12\x18\n\x13\x43OMPATIBILITY_ALIAS\x10\xff\x01\x12\x08\n\x03NIL\x10\x80\x02\x12\x14\n\x0f\x43LASS_INTERFACE\x10\x81\x02\x12\x19\n\x14\x43LASS_IMPLEMENTATION\x10\x82\x02\x12\x19\n\x14PROTOCOL_DECLARATION\x10\x83\x02\x12\t\n\x04\x43\x41ST\x10\x84\x02\x12\x0f\n\nCONST_CAST\x10\x85\x02\x12\x11\n\x0c\x44YNAMIC_CAST\x10\x86\x02\x12\x15\n\x10REINTERPRET_CAST\x10\x87\x02\x12\x10\n\x0bSTATIC_CAST\x10\x88\x02\x12\r\n\x08POSITION\x10\x89\x02\x12\x17\n\x12\x43UDA_ARGUMENT_LIST\x10\x8a\x02\x12\x12\n\rOMP_DIRECTIVE\x10\x8b\x02\x12\r\n\x08OMP_NAME\x10\x8c\x02\x12\x0f\n\nOMP_CLAUSE\x10\x8d\x02\x12\x16\n\x11OMP_ARGUMENT_LIST\x10\x8e\x02\x12\x11\n\x0cOMP_ARGUMENT\x10\x8f\x02\x12\x13\n\x0eOMP_EXPRESSION\x10\x90\x02\x12\x16\n\x11\x45ND_ELEMENT_TOKEN\x10\x91\x02\x12\t\n\x04MAIN\x10\x92\x02\x12\n\n\x05\x42REAK\x10\x93\x02\x12\r\n\x08\x43ONTINUE\x10\x94\x02\x12\n\n\x05WHILE\x10\x95\x02\x12\x07\n\x02\x44O\x10\x96\x02\x12\x08\n\x03\x46OR\x10\x97\x02\x12\x07\n\x02IF\x10\x98\x02\x12\t\n\x04GOTO\x10\x99\x02\x12\x13\n\x0eVISUAL_CXX_ASM\x10\x9a\x02\x12\x0b\n\x06SIZEOF\x10\x9b\x02\x12\t\n\x04\x41UTO\x10\x9c\x02\x12\r\n\x08REGISTER\x10\x9d\x02\x12\r\n\x08RESTRICT\x10\x9e\x02\x12\x0e\n\tIMAGINARY\x10\x9f\x02\x12\r\n\x08NORETURN\x10\xa0\x02\x12\x12\n\rSTATIC_ASSERT\x10\xa1\x02\x12\x0e\n\tCRESTRICT\x10\xa2\x02\x12\x0c\n\x07\x43XX_TRY\x10\xa3\x02\x12\x0e\n\tCXX_CATCH\x10\xa4\x02\x12\x0e\n\tCXX_CLASS\x10\xa5\x02\x12\x0e\n\tCONSTEXPR\x10\xa6\x02\x12\x11\n\x0cTHREAD_LOCAL\x10\xa7\x02\x12\x0c\n\x07NULLPTR\x10\xa8\x02\x12\t\n\x04VOID\x10\xa9\x02\x12\x0b\n\x06RETURN\x10\xaa\x02\x12\x0c\n\x07INCLUDE\x10\xab\x02\x12\x0b\n\x06\x44\x45\x46INE\x10\xac\x02\x12\t\n\x04\x45LIF\x10\xad\x02\x12\n\n\x05\x45NDIF\x10\xae\x02\x12\x0e\n\tERRORPREC\x10\xaf\x02\x12\x0c\n\x07WARNING\x10\xb0\x02\x12\n\n\x05IFDEF\x10\xb1\x02\x12\x0b\n\x06IFNDEF\x10\xb2\x02\x12\t\n\x04LINE\x10\xb3\x02\x12\x0b\n\x06PRAGMA\x10\xb4\x02\x12\n\n\x05UNDEF\x10\xb5\x02\x12\x0b\n\x06INLINE\x10\xb6\x02\x12\x14\n\x0fMACRO_TYPE_NAME\x10\xb7\x02\x12\x0f\n\nMACRO_CASE\x10\xb8\x02\x12\x10\n\x0bMACRO_LABEL\x10\xb9\x02\x12\x0e\n\tSPECIFIER\x10\xba\x02\x12\x08\n\x03TRY\x10\xbb\x02\x12\n\n\x05\x43\x41TCH\x10\xbc\x02\x12\n\n\x05THROW\x10\xbd\x02\x12\x0b\n\x06THROWS\x10\xbe\x02\x12\x0b\n\x06PUBLIC\x10\xbf\x02\x12\x0c\n\x07PRIVATE\x10\xc0\x02\x12\x0e\n\tPROTECTED\x10\xc1\x02\x12\x0c\n\x07VIRTUAL\x10\xc2\x02\x12\r\n\x08\x45XPLICIT\x10\xc3\x02\x12\x0c\n\x07\x46OREVER\x10\xc4\x02\x12\x0b\n\x06SIGNAL\x10\xc5\x02\x12\t\n\x04\x45MIT\x10\xc6\x02\x12\x08\n\x03NEW\x10\xc7\x02\x12\x0b\n\x06\x44\x45LETE\x10\xc8\x02\x12\x0b\n\x06STATIC\x10\xc9\x02\x12\n\n\x05\x43ONST\x10\xca\x02\x12\x0c\n\x07MUTABLE\x10\xcb\x02\x12\r\n\x08VOLATILE\x10\xcc\x02\x12\x0e\n\tTRANSIENT\x10\xcd\x02\x12\x0c\n\x07\x46INALLY\x10\xce\x02\x12\n\n\x05\x46INAL\x10\xcf\x02\x12\r\n\x08\x41\x42STRACT\x10\xd0\x02\x12\n\n\x05SUPER\x10\xd1\x02\x12\x11\n\x0cSYNCHRONIZED\x10\xd2\x02\x12\x0b\n\x06NATIVE\x10\xd3\x02\x12\r\n\x08STRICTFP\x10\xd4\x02\x12\x10\n\x0bNULLLITERAL\x10\xd5\x02\x12\x0b\n\x06\x41SSERT\x10\xd6\x02\x12\x0c\n\x07\x46OREACH\x10\xd7\x02\x12\x08\n\x03REF\x10\xd8\x02\x12\x08\n\x03OUT\x10\xd9\x02\x12\t\n\x04LOCK\x10\xda\x02\x12\x07\n\x02IS\x10\xdb\x02\x12\r\n\x08INTERNAL\x10\xdc\x02\x12\x0b\n\x06SEALED\x10\xdd\x02\x12\r\n\x08OVERRIDE\x10\xde\x02\x12\r\n\x08IMPLICIT\x10\xdf\x02\x12\x0f\n\nSTACKALLOC\x10\xe0\x02\x12\x07\n\x02\x41S\x10\xe1\x02\x12\r\n\x08\x44\x45LEGATE\x10\xe2\x02\x12\n\n\x05\x46IXED\x10\xe3\x02\x12\x0c\n\x07\x43HECKED\x10\xe4\x02\x12\x0e\n\tUNCHECKED\x10\xe5\x02\x12\x0b\n\x06REGION\x10\xe6\x02\x12\x0e\n\tENDREGION\x10\xe7\x02\x12\x0b\n\x06UNSAFE\x10\xe8\x02\x12\r\n\x08READONLY\x10\xe9\x02\x12\x08\n\x03GET\x10\xea\x02\x12\x08\n\x03SET\x10\xeb\x02\x12\x08\n\x03\x41\x44\x44\x10\xec\x02\x12\x0b\n\x06REMOVE\x10\xed\x02\x12\n\n\x05YIELD\x10\xee\x02\x12\x0c\n\x07PARTIAL\x10\xef\x02\x12\n\n\x05\x41WAIT\x10\xf0\x02\x12\n\n\x05\x41SYNC\x10\xf1\x02\x12\t\n\x04THIS\x10\xf2\x02\x12\x0b\n\x06PARAMS\x10\xf3\x02\x12\n\n\x05\x41LIAS\x10\xf4\x02\x12\x0e\n\tASCENDING\x10\xf5\x02\x12\x0f\n\nDESCENDING\x10\xf6\x02\x12\x10\n\x0b\x41TINTERFACE\x10\xf7\x02\x12\x15\n\x10\x41TIMPLEMENTATION\x10\xf8\x02\x12\n\n\x05\x41TEND\x10\xf9\x02\x12\x0f\n\nATPROTOCOL\x10\xfa\x02\x12\x0f\n\nATREQUIRED\x10\xfb\x02\x12\x0f\n\nATOPTIONAL\x10\xfc\x02\x12\x0c\n\x07\x41TCLASS\x10\xfd\x02\x12\t\n\x04WEAK\x10\xfe\x02\x12\x0b\n\x06STRONG\x10\xff\x02\x12\x0c\n\x07OMP_OMP\x10\x80\x03\x12\x12\n\rSPECIAL_CHARS\x10\x81\x03\"Q\n\x08\x44iffType\x12\x0b\n\x07MATCHED\x10\x00\x12\t\n\x05\x41\x44\x44\x45\x44\x10\x01\x12\x0b\n\x07\x44\x45LETED\x10\x02\x12\x10\n\x0c\x43HANGED_FROM\x10\x03\x12\x0e\n\nCHANGED_TO\x10\x04\x42\x06\n\x04typeB\x07\n\x05\x65xtra\"\xc4\x04\n\x05\x44\x65lta\x12\x0b\n\x03src\x18\x01 \x01(\t\x12\x0b\n\x03\x64st\x18\x02 \x01(\t\x12\x1e\n\x04\x64iff\x18\x03 \x03(\x0b\x32\x10.fast.Delta.Diff\x1a\x80\x04\n\x04\x44iff\x12(\n\x04type\x18\x01 \x01(\x0e\x32\x1a.fast.Delta.Diff.DeltaType\x12\'\n\x05match\x18\x02 \x01(\x0b\x32\x16.fast.Delta.Diff.MatchH\x00\x12#\n\x03\x61\x64\x64\x18\x03 \x01(\x0b\x32\x14.fast.Delta.Diff.AddH\x00\x12#\n\x03\x64\x65l\x18\x04 \x01(\x0b\x32\x14.fast.Delta.Diff.DelH\x00\x12%\n\x04move\x18\x05 \x01(\x0b\x32\x15.fast.Delta.Diff.MoveH\x00\x12)\n\x06update\x18\x06 \x01(\x0b\x32\x17.fast.Delta.Diff.UpdateH\x00\x1a!\n\x05Match\x12\x0b\n\x03src\x18\x01 \x01(\x05\x12\x0b\n\x03\x64st\x18\x02 \x01(\x05\x1a\x31\n\x03\x41\x64\x64\x12\x0b\n\x03src\x18\x01 \x01(\x05\x12\x0b\n\x03\x64st\x18\x02 \x01(\x05\x12\x10\n\x08position\x18\x03 \x01(\x05\x1a\x12\n\x03\x44\x65l\x12\x0b\n\x03src\x18\x01 \x01(\x05\x1a\x32\n\x04Move\x12\x0b\n\x03src\x18\x01 \x01(\x05\x12\x0b\n\x03\x64st\x18\x02 \x01(\x05\x12\x10\n\x08position\x18\x03 \x01(\x05\x1a\"\n\x06Update\x12\x0b\n\x03src\x18\x01 \x01(\x05\x12\x0b\n\x03\x64st\x18\x02 \x01(\x05\">\n\tDeltaType\x12\t\n\x05MATCH\x10\x00\x12\x07\n\x03\x41\x44\x44\x10\x01\x12\x07\n\x03\x44\x45L\x10\x02\x12\x08\n\x04MOVE\x10\x03\x12\n\n\x06UPDATE\x10\x04\x42\x07\n\x05\x64\x65lta\"\xa8\x03\n\x05Pairs\x12\x1e\n\x04pair\x18\x01 \x03(\x0b\x32\x10.fast.Pairs.Pair\x1a\xfe\x02\n\x04Pair\x12#\n\x04left\x18\x01 \x01(\x0b\x32\x15.fast.Pairs.Pair.Diff\x12$\n\x05right\x18\x02 \x01(\x0b\x32\x15.fast.Pairs.Pair.Diff\x12(\n\x04type\x18\x03 \x01(\x0e\x32\x1a.fast.Pairs.Pair.CloneType\x1a\xd7\x01\n\x04\x44iff\x12\x0f\n\x07project\x18\x01 \x01(\t\x12\x11\n\tleft_line\x18\x02 \x01(\x05\x12\x13\n\x0bleft_column\x18\x03 \x01(\x05\x12\x12\n\nright_line\x18\x04 \x01(\x05\x12\x14\n\x0cright_column\x18\x05 \x01(\x05\x12\x1f\n\x08old_code\x18\x06 \x01(\x0b\x32\r.fast.Element\x12\x1f\n\x08new_code\x18\x07 \x01(\x0b\x32\r.fast.Element\x12\x0c\n\x04hash\x18\x08 \x01(\t\x12\x1c\n\x06slices\x18\t \x01(\x0b\x32\x0c.fast.Slices\"\'\n\tCloneType\x12\t\n\x05MAYBE\x10\x00\x12\x07\n\x03YES\x10\x01\x12\x06\n\x02NO\x10\x02\"\xac\x06\n\x03Log\x12 \n\x06\x63ommit\x18\x01 \x03(\x0b\x32\x10.fast.Log.Commit\x12 \n\x06\x61uthor\x18\x02 \x03(\x0b\x32\x10.fast.Log.Author\x1a\xad\x05\n\x06\x43ommit\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04text\x18\x02 \x01(\x0c\x12\x11\n\tauthor_id\x18\x03 \x01(\x05\x12\x13\n\x0b\x61uthor_date\x18\x04 \x01(\t\x12/\n\tcommitter\x18\x05 \x01(\x0b\x32\x1a.fast.Log.Commit.CommitterH\x00\x12#\n\x04\x64iff\x18\x06 \x03(\x0b\x32\x15.fast.Log.Commit.Diff\x12\x1b\n\x05slice\x18\x07 \x01(\x0b\x32\x0c.fast.Slices\x1a\x36\n\tCommitter\x12\x14\n\x0c\x63ommitter_id\x18\x01 \x01(\x05\x12\x13\n\x0b\x63ommit_date\x18\x02 \x01(\t\x1a\xac\x03\n\x04\x44iff\x12\t\n\x01\x61\x18\x01 \x01(\t\x12\t\n\x01\x62\x18\x02 \x01(\t\x12\x0e\n\x06is_new\x18\x03 \x01(\x08\x12\x0f\n\x07is_code\x18\x04 \x01(\t\x12\x12\n\nindex_from\x18\x05 \x01(\t\x12\x10\n\x08index_to\x18\x06 \x01(\t\x12\x0c\n\x04mode\x18\x07 \x01(\t\x12(\n\x04hunk\x18\x08 \x03(\x0b\x32\x1a.fast.Log.Commit.Diff.Hunk\x1a\x8e\x02\n\x04Hunk\x12\x13\n\x0b\x66rom_lineno\x18\x01 \x01(\x05\x12\x13\n\x0b\x66rom_column\x18\x02 \x01(\x05\x12\x11\n\tto_lineno\x18\x03 \x01(\x05\x12\x11\n\tto_column\x18\x04 \x01(\x05\x12\x0f\n\x07\x63ontext\x18\x05 \x01(\t\x12\x1e\n\x07\x65lement\x18\x06 \x03(\x0b\x32\r.fast.Element\x12/\n\x03mod\x18\x07 \x03(\x0b\x32\".fast.Log.Commit.Diff.Hunk.ModLine\x12\x1b\n\x05slice\x18\x08 \x01(\x0b\x32\x0c.fast.Slices\x1a\x37\n\x07ModLine\x12\x0c\n\x04line\x18\x01 \x01(\x0c\x12\x0e\n\x06is_add\x18\x02 \x01(\x08\x12\x0e\n\x06is_del\x18\x03 \x01(\x08\x42\x07\n\x05\x65xtra\x1a\x31\n\x06\x41uthor\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\x0c\x12\r\n\x05\x65mail\x18\x03 \x01(\t\"\xc3\x07\n\x06Slices\x12!\n\x05slice\x18\x01 \x03(\x0b\x32\x12.fast.Slices.Slice\x1a\x95\x07\n\x05Slice\x12+\n\x04\x66ile\x18\x01 \x03(\x0b\x32\x1d.fast.Slices.Slice.SourceFile\x12\x0c\n\x04hash\x18\x02 \x01(\t\x1a\xa1\x06\n\nSourceFile\x12\x38\n\x08\x66unction\x18\x01 \x03(\x0b\x32&.fast.Slices.Slice.SourceFile.Function\x12\x0c\n\x04name\x18\x02 \x01(\t\x12+\n\x04type\x18\x03 \x01(\x0e\x32\x1d.fast.Slices.Slice.ChangeType\x1a\x9d\x05\n\x08\x46unction\x12\x41\n\x08variable\x18\x01 \x03(\x0b\x32/.fast.Slices.Slice.SourceFile.Function.Variable\x12\x0c\n\x04name\x18\x02 \x01(\t\x12+\n\x04type\x18\x03 \x01(\x0e\x32\x1d.fast.Slices.Slice.ChangeType\x1a\x92\x04\n\x08Variable\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x45\n\x03pos\x18\x02 \x01(\x0b\x32\x38.fast.Slices.Slice.SourceFile.Function.Variable.Position\x12+\n\x04type\x18\x03 \x01(\x0e\x32\x1d.fast.Slices.Slice.ChangeType\x12\x46\n\x04\x64\x65\x66n\x18\x04 \x03(\x0b\x32\x38.fast.Slices.Slice.SourceFile.Function.Variable.Position\x12\x45\n\x03use\x18\x05 \x03(\x0b\x32\x38.fast.Slices.Slice.SourceFile.Function.Variable.Position\x12\x0c\n\x04\x64var\x18\x06 \x03(\t\x12\r\n\x05\x61lias\x18\x07 \x03(\t\x12K\n\x05\x63\x66unc\x18\x08 \x03(\x0b\x32<.fast.Slices.Slice.SourceFile.Function.Variable.FunctionDecl\x1a]\n\x08Position\x12\x0e\n\x06lineno\x18\x01 \x01(\x05\x12+\n\x04type\x18\x02 \x01(\x0e\x32\x1d.fast.Slices.Slice.ChangeType\x12\x14\n\x0c\x64\x65lta_lineno\x18\x05 \x01(\x05\x1a,\n\x0c\x46unctionDecl\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0e\n\x06lineno\x18\x02 \x01(\x05\"-\n\nChangeType\x12\r\n\tUNCHANGED\x10\x00\x12\x07\n\x03\x41\x44\x44\x10\x01\x12\x07\n\x03\x44\x45L\x10\x02\"\xd6\x01\n\x04\x42ugs\x12\x12\n\nrepository\x18\x01 \x01(\t\x12\x1b\n\x03\x62ug\x18\x02 \x03(\x0b\x32\x0e.fast.Bugs.Bug\x1a\x9c\x01\n\x03\x42ug\x12\n\n\x02id\x18\x01 \x01(\x0c\x12\x10\n\x08opendate\x18\x02 \x01(\x0c\x12\x0f\n\x07\x66ixdate\x18\x03 \x01(\x0c\x12$\n\x07\x62uginfo\x18\x04 \x01(\x0b\x32\x13.fast.Bugs.Bug.Info\x12\x12\n\nfixed_file\x18\x05 \x03(\x0c\x1a,\n\x04Info\x12\x0f\n\x07summary\x18\x01 \x01(\x0c\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\x0c\"\xc8\x01\n\x04\x44\x61ta\x12 \n\x07\x65lement\x18\x01 \x01(\x0b\x32\r.fast.ElementH\x00\x12\x18\n\x03log\x18\x02 \x01(\x0b\x32\t.fast.LogH\x00\x12\x1c\n\x05\x64\x65lta\x18\x03 \x01(\x0b\x32\x0b.fast.DeltaH\x00\x12\x1c\n\x05pairs\x18\x04 \x01(\x0b\x32\x0b.fast.PairsH\x00\x12\x1e\n\x06slices\x18\x05 \x01(\x0b\x32\x0c.fast.SlicesH\x00\x12\x1a\n\x04\x62ugs\x18\x06 \x01(\x0b\x32\n.fast.BugsH\x00\x42\x0c\n\nRecordType*\xbb\x12\n\tSmaliKind\x12\x0e\n\nsmali_file\x10\x00\x12\x0e\n\nclass_spec\x10\x01\x12\x0e\n\nsuper_spec\x10\x02\x12\x13\n\x0fimplements_spec\x10\x03\x12\x0f\n\x0bsource_spec\x10\x04\x12\x0f\n\x0b\x61\x63\x63\x65ss_list\x10\x05\x12\t\n\x05\x66ield\x10\x06\x12\n\n\x06method\x10\x07\x12\x1d\n\x19statements_and_directives\x10\x08\x12\x17\n\x13ordered_method_item\x10\t\x12\x17\n\x13registers_directive\x10\n\x12\x14\n\x10param_list_or_id\x10\x0b\x12\x0f\n\x0bsimple_name\x10\x0c\x12\x0f\n\x0bmember_name\x10\r\x12\x14\n\x10method_prototype\x10\x0e\x12#\n\x1fparam_list_or_id_primitive_type\x10\x0f\x12\x0e\n\nparam_list\x10\x10\x12\x14\n\x10\x61rray_descriptor\x10\x11\x12\x13\n\x0ftype_descriptor\x10\x12\x12\x1b\n\x17nonvoid_type_descriptor\x10\x13\x12\x1d\n\x19reference_type_descriptor\x10\x14\x12\x13\n\x0finteger_literal\x10\x15\x12\x11\n\rfloat_literal\x10\x16\x12\x12\n\x0e\x64ouble_literal\x10\x17\x12\x0b\n\x07literal\x10\x18\x12\x1a\n\x16parsed_integer_literal\x10\x19\x12\x14\n\x10integral_literal\x10\x1a\x12\x17\n\x13\x66ixed_32bit_literal\x10\x1b\x12\x11\n\rfixed_literal\x10\x1c\x12\x11\n\rarray_literal\x10\x1d\x12\x16\n\x12\x61nnotation_element\x10\x1e\x12\x0e\n\nannotation\x10\x1f\x12\x11\n\rsubannotation\x10 \x12\x10\n\x0c\x65num_literal\x10!\x12\x1d\n\x19type_field_method_literal\x10\"\x12\x14\n\x10method_reference\x10#\x12\x13\n\x0f\x66ield_reference\x10$\x12\t\n\x05label\x10%\x12\r\n\tlabel_ref\x10&\x12\x11\n\rregister_list\x10\'\x12\x12\n\x0eregister_range\x10(\x12 \n\x1cverification_error_reference\x10)\x12\x13\n\x0f\x63\x61tch_directive\x10*\x12\x16\n\x12\x63\x61tchall_directive\x10+\x12\x17\n\x13parameter_directive\x10,\x12\x13\n\x0f\x64\x65\x62ug_directive\x10-\x12\x12\n\x0eline_directive\x10.\x12\x13\n\x0flocal_directive\x10/\x12\x17\n\x13\x65nd_local_directive\x10\x30\x12\x1b\n\x17restart_local_directive\x10\x31\x12\x16\n\x12prologue_directive\x10\x32\x12\x16\n\x12\x65pilogue_directive\x10\x33\x12\x14\n\x10source_directive\x10\x34\x12\x19\n\x15instruction_format12x\x10\x35\x12\x19\n\x15instruction_format22s\x10\x36\x12\x19\n\x15instruction_format31i\x10\x37\x12\x0f\n\x0binstruction\x10\x38\x12\x12\n\x0einsn_format10t\x10\x39\x12\x12\n\x0einsn_format10x\x10:\x12\x17\n\x13insn_format10x_odex\x10;\x12\x12\n\x0einsn_format11n\x10<\x12\x12\n\x0einsn_format11x\x10=\x12\x12\n\x0einsn_format12x\x10>\x12\x13\n\x0finsn_format20bc\x10?\x12\x12\n\x0einsn_format20t\x10@\x12\x18\n\x14insn_format21c_field\x10\x41\x12\x1d\n\x19insn_format21c_field_odex\x10\x42\x12\x19\n\x15insn_format21c_string\x10\x43\x12\x17\n\x13insn_format21c_type\x10\x44\x12\x13\n\x0finsn_format21ih\x10\x45\x12\x13\n\x0finsn_format21lh\x10\x46\x12\x12\n\x0einsn_format21s\x10G\x12\x12\n\x0einsn_format21t\x10H\x12\x12\n\x0einsn_format22b\x10I\x12\x18\n\x14insn_format22c_field\x10J\x12\x1d\n\x19insn_format22c_field_odex\x10K\x12\x17\n\x13insn_format22c_type\x10L\x12\x19\n\x15insn_format22cs_field\x10M\x12\x12\n\x0einsn_format22s\x10N\x12\x12\n\x0einsn_format22t\x10O\x12\x12\n\x0einsn_format22x\x10P\x12\x12\n\x0einsn_format23x\x10Q\x12\x12\n\x0einsn_format30t\x10R\x12\x12\n\x0einsn_format31c\x10S\x12\x12\n\x0einsn_format31i\x10T\x12\x12\n\x0einsn_format31t\x10U\x12\x12\n\x0einsn_format32x\x10V\x12\x19\n\x15insn_format35c_method\x10W\x12\x17\n\x13insn_format35c_type\x10X\x12\x1e\n\x1ainsn_format35c_method_odex\x10Y\x12\x1a\n\x16insn_format35mi_method\x10Z\x12\x1a\n\x16insn_format35ms_method\x10[\x12\x19\n\x15insn_format3rc_method\x10\\\x12\x1e\n\x1ainsn_format3rc_method_odex\x10]\x12\x17\n\x13insn_format3rc_type\x10^\x12\x1a\n\x16insn_format3rmi_method\x10_\x12\x1a\n\x16insn_format3rms_method\x10`\x12\x1a\n\x16insn_format45cc_method\x10\x61\x12\x1a\n\x16insn_format4rcc_method\x10\x62\x12\x12\n\x0einsn_format51l\x10\x63\x12\x1d\n\x19insn_array_data_directive\x10\x64\x12 \n\x1cinsn_packed_switch_directive\x10\x65\x12 \n\x1cinsn_sparse_switch_directive\x10\x66*\xc1\n\n\x0bPython3Kind\x12\x10\n\x0csingle_input\x10\x00\x12\x0e\n\nfile_input\x10\x01\x12\x0e\n\neval_input\x10\x02\x12\r\n\tdecorator\x10\x03\x12\x0e\n\ndecorators\x10\x04\x12\r\n\tdecorated\x10\x05\x12\x11\n\rasync_funcdef\x10\x06\x12\x0b\n\x07\x66uncdef\x10\x07\x12\x0e\n\nparameters\x10\x08\x12\x11\n\rtypedargslist\x10\t\x12\n\n\x06tfpdef\x10\n\x12\x0f\n\x0bvarargslist\x10\x0b\x12\n\n\x06vfpdef\x10\x0c\x12\x08\n\x04stmt\x10\r\x12\x0f\n\x0bsimple_stmt\x10\x0e\x12\x0e\n\nsmall_stmt\x10\x0f\x12\r\n\texpr_stmt\x10\x10\x12\r\n\tannassign\x10\x11\x12\x16\n\x12testlist_star_expr\x10\x12\x12\r\n\taugassign\x10\x13\x12\x0c\n\x08\x64\x65l_stmt\x10\x14\x12\r\n\tpass_stmt\x10\x15\x12\r\n\tflow_stmt\x10\x16\x12\x0e\n\nbreak_stmt\x10\x17\x12\x11\n\rcontinue_stmt\x10\x18\x12\x0f\n\x0breturn_stmt\x10\x19\x12\x0e\n\nyield_stmt\x10\x1a\x12\x0e\n\nraise_stmt\x10\x1b\x12\x0f\n\x0bimport_stmt\x10\x1c\x12\x0f\n\x0bimport_name\x10\x1d\x12\x0f\n\x0bimport_from\x10\x1e\x12\x12\n\x0eimport_as_name\x10\x1f\x12\x12\n\x0e\x64otted_as_name\x10 \x12\x13\n\x0fimport_as_names\x10!\x12\x13\n\x0f\x64otted_as_names\x10\"\x12\x0f\n\x0b\x64otted_name\x10#\x12\x0f\n\x0bglobal_stmt\x10$\x12\x11\n\rnonlocal_stmt\x10%\x12\x0f\n\x0b\x61ssert_stmt\x10&\x12\x11\n\rcompound_stmt\x10\'\x12\x0e\n\nasync_stmt\x10(\x12\x0b\n\x07if_stmt\x10)\x12\x0e\n\nwhile_stmt\x10*\x12\x0c\n\x08\x66or_stmt\x10+\x12\x0c\n\x08try_stmt\x10,\x12\r\n\twith_stmt\x10-\x12\r\n\twith_item\x10.\x12\x11\n\rexcept_clause\x10/\x12\t\n\x05suite\x10\x30\x12\x08\n\x04test\x10\x31\x12\x0f\n\x0btest_nocond\x10\x32\x12\x0b\n\x07lambdef\x10\x33\x12\x12\n\x0elambdef_nocond\x10\x34\x12\x0b\n\x07or_test\x10\x35\x12\x0c\n\x08\x61nd_test\x10\x36\x12\x0c\n\x08not_test\x10\x37\x12\x0e\n\ncomparison\x10\x38\x12\x0b\n\x07\x63omp_op\x10\x39\x12\r\n\tstar_expr\x10:\x12\x08\n\x04\x65xpr\x10;\x12\x0c\n\x08xor_expr\x10<\x12\x0c\n\x08\x61nd_expr\x10=\x12\x0e\n\nshift_expr\x10>\x12\x0e\n\narith_expr\x10?\x12\x08\n\x04term\x10@\x12\n\n\x06\x66\x61\x63tor\x10\x41\x12\t\n\x05power\x10\x42\x12\r\n\tatom_expr\x10\x43\x12\x08\n\x04\x61tom\x10\x44\x12\x11\n\rtestlist_comp\x10\x45\x12\x0b\n\x07trailer\x10\x46\x12\x11\n\rsubscriptlist\x10G\x12\r\n\tsubscript\x10H\x12\x0b\n\x07sliceop\x10I\x12\x0c\n\x08\x65xprlist\x10J\x12\x0c\n\x08testlist\x10K\x12\x12\n\x0e\x64ictorsetmaker\x10L\x12\x0c\n\x08\x63lassdef\x10M\x12\x0b\n\x07\x61rglist\x10N\x12\x0c\n\x08\x61rgument\x10O\x12\r\n\tcomp_iter\x10P\x12\x0c\n\x08\x63omp_for\x10Q\x12\x0b\n\x07\x63omp_if\x10R\x12\x11\n\rencoding_decl\x10S\x12\x0e\n\nyield_expr\x10T\x12\r\n\tyield_arg\x10U*\xac\r\n\x0cSolidityKind\x12\x0e\n\nsourceunit\x10\x00\x12\x13\n\x0fpragmadirective\x10\x01\x12\x0e\n\npragmaname\x10\x02\x12\x0f\n\x0bpragmavalue\x10\x03\x12\x0b\n\x07version\x10\x04\x12\x13\n\x0fversionoperator\x10\x05\x12\x15\n\x11versionconstraint\x10\x06\x12\x15\n\x11importdeclaration\x10\x07\x12\x13\n\x0fimportdirective\x10\x08\x12\x16\n\x12\x63ontractdefinition\x10\t\x12\x18\n\x14inheritancespecifier\x10\n\x12\x10\n\x0c\x63ontractpart\x10\x0b\x12\x1c\n\x18statevariabledeclaration\x10\x0c\x12\x17\n\x13usingfordeclaration\x10\r\x12\x14\n\x10structdefinition\x10\x0e\x12\x16\n\x12modifierdefinition\x10\x0f\x12\x16\n\x12modifierinvocation\x10\x10\x12\x16\n\x12\x66unctiondefinition\x10\x11\x12\x14\n\x10returnparameters\x10\x12\x12\x10\n\x0cmodifierlist\x10\x13\x12\x13\n\x0f\x65ventdefinition\x10\x14\x12\r\n\tenumvalue\x10\x15\x12\x12\n\x0e\x65numdefinition\x10\x16\x12\x18\n\x14indexedparameterlist\x10\x17\x12\x14\n\x10indexedparameter\x10\x18\x12\x11\n\rparameterlist\x10\x19\x12\r\n\tparameter\x10\x1a\x12\x10\n\x0ctypenamelist\x10\x1b\x12\x14\n\x10unnamedparameter\x10\x1c\x12\x17\n\x13variabledeclaration\x10\x1d\x12\x0c\n\x08typename\x10\x1e\x12\x17\n\x13userdefinedtypename\x10\x1f\x12\x0b\n\x07mapping\x10 \x12\x14\n\x10\x66unctiontypename\x10!\x12\x13\n\x0fstoragelocation\x10\"\x12\x13\n\x0fstatemutability\x10#\x12\t\n\x05\x62lock\x10$\x12\r\n\tstatement\x10%\x12\x17\n\x13\x65xpressionstatement\x10&\x12\x0f\n\x0bifstatement\x10\'\x12\x12\n\x0ewhilestatement\x10(\x12\x13\n\x0fsimplestatement\x10)\x12\x10\n\x0c\x66orstatement\x10*\x12\x1b\n\x17inlineassemblystatement\x10+\x12\x14\n\x10\x64owhilestatement\x10,\x12\x15\n\x11\x63ontinuestatement\x10-\x12\x12\n\x0e\x62reakstatement\x10.\x12\x13\n\x0freturnstatement\x10/\x12\x12\n\x0ethrowstatement\x10\x30\x12 \n\x1cvariabledeclarationstatement\x10\x31\x12\x12\n\x0eidentifierlist\x10\x32\x12\x16\n\x12\x65lementarytypename\x10\x33\x12\x0e\n\nexpression\x10\x34\x12\x15\n\x11primaryexpression\x10\x35\x12\x12\n\x0e\x65xpressionlist\x10\x36\x12\x11\n\rnamevaluelist\x10\x37\x12\r\n\tnamevalue\x10\x38\x12\x19\n\x15\x66unctioncallarguments\x10\x39\x12\x11\n\rassemblyblock\x10:\x12\x10\n\x0c\x61ssemblyitem\x10;\x12\x16\n\x12\x61ssemblyexpression\x10<\x12\x10\n\x0c\x61ssemblycall\x10=\x12\x1b\n\x17\x61ssemblylocaldefinition\x10>\x12\x16\n\x12\x61ssemblyassignment\x10?\x12\x1c\n\x18\x61ssemblyidentifierorlist\x10@\x12\x1a\n\x16\x61ssemblyidentifierlist\x10\x41\x12\x1b\n\x17\x61ssemblyrightassignment\x10\x42\x12\x13\n\x0flabeldefinition\x10\x43\x12\x12\n\x0e\x61ssemblyswitch\x10\x44\x12\x10\n\x0c\x61ssemblycase\x10\x45\x12\x1e\n\x1a\x61ssemblyfunctiondefinition\x10\x46\x12\x0f\n\x0b\x61ssemblyfor\x10G\x12\x13\n\x0f\x61ssemblyliteral\x10H\x12\x0f\n\x0bsubassembly\x10I\x12\x0c\n\x08\x64\x61tasize\x10J\x12\x10\n\x0clinkersymbol\x10K\x12\x13\n\x0ftupleexpression\x10L\x12 \n\x1c\x65lementarytypenameexpression\x10M\x12\x11\n\rnumberliteral\x10N\x12\x0e\n\nidentifier\x10Ob\x06proto3')
 )
 
 _SMALIKIND = _descriptor.EnumDescriptor(
@@ -444,8 +444,8 @@ _SMALIKIND = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=10573,
-  serialized_end=12936,
+  serialized_start=10617,
+  serialized_end=12980,
 )
 _sym_db.RegisterEnumDescriptor(_SMALIKIND)
 
@@ -803,12 +803,347 @@ _PYTHON3KIND = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=12939,
-  serialized_end=14284,
+  serialized_start=12983,
+  serialized_end=14328,
 )
 _sym_db.RegisterEnumDescriptor(_PYTHON3KIND)
 
 Python3Kind = enum_type_wrapper.EnumTypeWrapper(_PYTHON3KIND)
+_SOLIDITYKIND = _descriptor.EnumDescriptor(
+  name='SolidityKind',
+  full_name='fast.SolidityKind',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='sourceunit', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='pragmadirective', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='pragmaname', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='pragmavalue', index=3, number=3,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='version', index=4, number=4,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='versionoperator', index=5, number=5,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='versionconstraint', index=6, number=6,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='importdeclaration', index=7, number=7,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='importdirective', index=8, number=8,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='contractdefinition', index=9, number=9,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='inheritancespecifier', index=10, number=10,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='contractpart', index=11, number=11,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='statevariabledeclaration', index=12, number=12,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='usingfordeclaration', index=13, number=13,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='structdefinition', index=14, number=14,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='modifierdefinition', index=15, number=15,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='modifierinvocation', index=16, number=16,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='functiondefinition', index=17, number=17,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='returnparameters', index=18, number=18,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='modifierlist', index=19, number=19,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='eventdefinition', index=20, number=20,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='enumvalue', index=21, number=21,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='enumdefinition', index=22, number=22,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='indexedparameterlist', index=23, number=23,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='indexedparameter', index=24, number=24,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='parameterlist', index=25, number=25,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='parameter', index=26, number=26,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='typenamelist', index=27, number=27,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='unnamedparameter', index=28, number=28,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='variabledeclaration', index=29, number=29,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='typename', index=30, number=30,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='userdefinedtypename', index=31, number=31,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='mapping', index=32, number=32,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='functiontypename', index=33, number=33,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='storagelocation', index=34, number=34,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='statemutability', index=35, number=35,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='block', index=36, number=36,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='statement', index=37, number=37,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='expressionstatement', index=38, number=38,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='ifstatement', index=39, number=39,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='whilestatement', index=40, number=40,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='simplestatement', index=41, number=41,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='forstatement', index=42, number=42,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='inlineassemblystatement', index=43, number=43,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='dowhilestatement', index=44, number=44,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='continuestatement', index=45, number=45,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='breakstatement', index=46, number=46,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='returnstatement', index=47, number=47,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='throwstatement', index=48, number=48,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='variabledeclarationstatement', index=49, number=49,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='identifierlist', index=50, number=50,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='elementarytypename', index=51, number=51,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='expression', index=52, number=52,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='primaryexpression', index=53, number=53,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='expressionlist', index=54, number=54,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='namevaluelist', index=55, number=55,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='namevalue', index=56, number=56,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='functioncallarguments', index=57, number=57,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='assemblyblock', index=58, number=58,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='assemblyitem', index=59, number=59,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='assemblyexpression', index=60, number=60,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='assemblycall', index=61, number=61,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='assemblylocaldefinition', index=62, number=62,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='assemblyassignment', index=63, number=63,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='assemblyidentifierorlist', index=64, number=64,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='assemblyidentifierlist', index=65, number=65,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='assemblyrightassignment', index=66, number=66,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='labeldefinition', index=67, number=67,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='assemblyswitch', index=68, number=68,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='assemblycase', index=69, number=69,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='assemblyfunctiondefinition', index=70, number=70,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='assemblyfor', index=71, number=71,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='assemblyliteral', index=72, number=72,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='subassembly', index=73, number=73,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='datasize', index=74, number=74,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='linkersymbol', index=75, number=75,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='tupleexpression', index=76, number=76,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='elementarytypenameexpression', index=77, number=77,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='numberliteral', index=78, number=78,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='identifier', index=79, number=79,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=14331,
+  serialized_end=16039,
+)
+_sym_db.RegisterEnumDescriptor(_SOLIDITYKIND)
+
+SolidityKind = enum_type_wrapper.EnumTypeWrapper(_SOLIDITYKIND)
 smali_file = 0
 class_spec = 1
 super_spec = 2
@@ -998,6 +1333,86 @@ comp_if = 82
 encoding_decl = 83
 yield_expr = 84
 yield_arg = 85
+sourceunit = 0
+pragmadirective = 1
+pragmaname = 2
+pragmavalue = 3
+version = 4
+versionoperator = 5
+versionconstraint = 6
+importdeclaration = 7
+importdirective = 8
+contractdefinition = 9
+inheritancespecifier = 10
+contractpart = 11
+statevariabledeclaration = 12
+usingfordeclaration = 13
+structdefinition = 14
+modifierdefinition = 15
+modifierinvocation = 16
+functiondefinition = 17
+returnparameters = 18
+modifierlist = 19
+eventdefinition = 20
+enumvalue = 21
+enumdefinition = 22
+indexedparameterlist = 23
+indexedparameter = 24
+parameterlist = 25
+parameter = 26
+typenamelist = 27
+unnamedparameter = 28
+variabledeclaration = 29
+typename = 30
+userdefinedtypename = 31
+mapping = 32
+functiontypename = 33
+storagelocation = 34
+statemutability = 35
+block = 36
+statement = 37
+expressionstatement = 38
+ifstatement = 39
+whilestatement = 40
+simplestatement = 41
+forstatement = 42
+inlineassemblystatement = 43
+dowhilestatement = 44
+continuestatement = 45
+breakstatement = 46
+returnstatement = 47
+throwstatement = 48
+variabledeclarationstatement = 49
+identifierlist = 50
+elementarytypename = 51
+expression = 52
+primaryexpression = 53
+expressionlist = 54
+namevaluelist = 55
+namevalue = 56
+functioncallarguments = 57
+assemblyblock = 58
+assemblyitem = 59
+assemblyexpression = 60
+assemblycall = 61
+assemblylocaldefinition = 62
+assemblyassignment = 63
+assemblyidentifierorlist = 64
+assemblyidentifierlist = 65
+assemblyrightassignment = 66
+labeldefinition = 67
+assemblyswitch = 68
+assemblycase = 69
+assemblyfunctiondefinition = 70
+assemblyfor = 71
+assemblyliteral = 72
+subassembly = 73
+datasize = 74
+linkersymbol = 75
+tupleexpression = 76
+elementarytypenameexpression = 77
+numberliteral = 78
+identifier = 79
 
 
 _ELEMENT_UNIT_LANGUAGETYPE = _descriptor.EnumDescriptor(
@@ -1045,8 +1460,8 @@ _ELEMENT_UNIT_LANGUAGETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=524,
-  serialized_end=635,
+  serialized_start=569,
+  serialized_end=680,
 )
 _sym_db.RegisterEnumDescriptor(_ELEMENT_UNIT_LANGUAGETYPE)
 
@@ -1083,8 +1498,8 @@ _ELEMENT_LITERAL_LITERALTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=698,
-  serialized_end=809,
+  serialized_start=743,
+  serialized_end=854,
 )
 _sym_db.RegisterEnumDescriptor(_ELEMENT_LITERAL_LITERALTYPE)
 
@@ -1415,1234 +1830,1234 @@ _ELEMENT_KIND = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FUNCTION_CALL', index=80, number=81,
+      name='FUNCTION_CALL', index=80, number=80,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DECLARATION_STATEMENT', index=81, number=82,
+      name='DECLARATION_STATEMENT', index=81, number=81,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DECLARATION', index=82, number=83,
+      name='DECLARATION', index=82, number=82,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DECLARATION_INITIALIZATION', index=83, number=84,
+      name='DECLARATION_INITIALIZATION', index=83, number=83,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DECLARATION_RANGE', index=84, number=85,
+      name='DECLARATION_RANGE', index=84, number=84,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='RANGE', index=85, number=86,
+      name='RANGE', index=85, number=85,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='GOTO_STATEMENT', index=86, number=87,
+      name='GOTO_STATEMENT', index=86, number=86,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CONTINUE_STATEMENT', index=87, number=88,
+      name='CONTINUE_STATEMENT', index=87, number=87,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='BREAK_STATEMENT', index=88, number=89,
+      name='BREAK_STATEMENT', index=88, number=88,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='LABEL_STATEMENT', index=89, number=90,
+      name='LABEL_STATEMENT', index=89, number=89,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='LABEL', index=90, number=91,
+      name='LABEL', index=90, number=90,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='SWITCH', index=91, number=92,
+      name='SWITCH', index=91, number=91,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CASE', index=92, number=93,
+      name='CASE', index=92, number=92,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DEFAULT', index=93, number=94,
+      name='DEFAULT', index=93, number=93,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FUNCTION_DEFINITION', index=94, number=95,
+      name='FUNCTION_DEFINITION', index=94, number=94,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FUNCTION_DECLARATION', index=95, number=96,
+      name='FUNCTION_DECLARATION', index=95, number=95,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='LAMBDA', index=96, number=97,
+      name='LAMBDA', index=96, number=96,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FUNCTION_LAMBDA', index=97, number=98,
+      name='FUNCTION_LAMBDA', index=97, number=97,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FUNCTION_SPECIFIER', index=98, number=99,
+      name='FUNCTION_SPECIFIER', index=98, number=98,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='RETURN_STATEMENT', index=99, number=100,
+      name='RETURN_STATEMENT', index=99, number=99,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PARAMETER_LIST', index=100, number=101,
+      name='PARAMETER_LIST', index=100, number=100,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PARAMETER', index=101, number=102,
+      name='PARAMETER', index=101, number=101,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='KRPARAMETER_LIST', index=102, number=103,
+      name='KRPARAMETER_LIST', index=102, number=102,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='KRPARAMETER', index=103, number=104,
+      name='KRPARAMETER', index=103, number=103,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ARGUMENT_LIST', index=104, number=105,
+      name='ARGUMENT_LIST', index=104, number=104,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ARGUMENT', index=105, number=106,
+      name='ARGUMENT', index=105, number=105,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PSEUDO_PARAMETER_LIST', index=106, number=107,
+      name='PSEUDO_PARAMETER_LIST', index=106, number=106,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='INDEXER_PARAMETER_LIST', index=107, number=108,
+      name='INDEXER_PARAMETER_LIST', index=107, number=107,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CLASS', index=108, number=109,
+      name='CLASS', index=108, number=108,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CLASS_DECLARATION', index=109, number=110,
+      name='CLASS_DECLARATION', index=109, number=109,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='STRUCT', index=110, number=111,
+      name='STRUCT', index=110, number=110,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='STRUCT_DECLARATION', index=111, number=112,
+      name='STRUCT_DECLARATION', index=111, number=111,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='UNION', index=112, number=113,
+      name='UNION', index=112, number=112,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='UNION_DECLARATION', index=113, number=114,
+      name='UNION_DECLARATION', index=113, number=113,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DERIVATION_LIST', index=114, number=115,
+      name='DERIVATION_LIST', index=114, number=114,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PUBLIC_ACCESS', index=115, number=116,
+      name='PUBLIC_ACCESS', index=115, number=115,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PUBLIC_ACCESS_DEFAULT', index=116, number=117,
+      name='PUBLIC_ACCESS_DEFAULT', index=116, number=116,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PRIVATE_ACCESS', index=117, number=118,
+      name='PRIVATE_ACCESS', index=117, number=117,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PRIVATE_ACCESS_DEFAULT', index=118, number=119,
+      name='PRIVATE_ACCESS_DEFAULT', index=118, number=118,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PROTECTED_ACCESS', index=119, number=120,
+      name='PROTECTED_ACCESS', index=119, number=119,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PROTECTED_ACCESS_DEFAULT', index=120, number=121,
+      name='PROTECTED_ACCESS_DEFAULT', index=120, number=120,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='MEMBER_INIT_LIST', index=121, number=122,
+      name='MEMBER_INIT_LIST', index=121, number=121,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='MEMBER_INITIALIZATION_LIST', index=122, number=123,
+      name='MEMBER_INITIALIZATION_LIST', index=122, number=122,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='MEMBER_INITIALIZATION', index=123, number=124,
+      name='MEMBER_INITIALIZATION', index=123, number=123,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CONSTRUCTOR_DEFINITION', index=124, number=125,
+      name='CONSTRUCTOR_DEFINITION', index=124, number=124,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CONSTRUCTOR_DECLARATION', index=125, number=126,
+      name='CONSTRUCTOR_DECLARATION', index=125, number=125,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DESTRUCTOR_DEFINITION', index=126, number=127,
+      name='DESTRUCTOR_DEFINITION', index=126, number=126,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DESTRUCTOR_DECLARATION', index=127, number=128,
+      name='DESTRUCTOR_DECLARATION', index=127, number=127,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FRIEND', index=128, number=129,
+      name='FRIEND', index=128, number=128,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CLASS_SPECIFIER', index=129, number=130,
+      name='CLASS_SPECIFIER', index=129, number=129,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='TRY_BLOCK', index=130, number=131,
+      name='TRY_BLOCK', index=130, number=130,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CATCH_BLOCK', index=131, number=132,
+      name='CATCH_BLOCK', index=131, number=131,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FINALLY_BLOCK', index=132, number=133,
+      name='FINALLY_BLOCK', index=132, number=132,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='THROW_STATEMENT', index=133, number=134,
+      name='THROW_STATEMENT', index=133, number=133,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='THROW_SPECIFIER', index=134, number=135,
+      name='THROW_SPECIFIER', index=134, number=134,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='THROW_SPECIFIER_JAVA', index=135, number=136,
+      name='THROW_SPECIFIER_JAVA', index=135, number=135,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='TEMPLATE', index=136, number=137,
+      name='TEMPLATE', index=136, number=136,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='GENERIC_ARGUMENT', index=137, number=138,
+      name='GENERIC_ARGUMENT', index=137, number=137,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='GENERIC_ARGUMENT_LIST', index=138, number=139,
+      name='GENERIC_ARGUMENT_LIST', index=138, number=138,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='TEMPLATE_PARAMETER', index=139, number=140,
+      name='TEMPLATE_PARAMETER', index=139, number=139,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='TEMPLATE_PARAMETER_LIST', index=140, number=141,
+      name='TEMPLATE_PARAMETER_LIST', index=140, number=140,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='GENERIC_PARAMETER', index=141, number=142,
+      name='GENERIC_PARAMETER', index=141, number=141,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='GENERIC_PARAMETER_LIST', index=142, number=143,
+      name='GENERIC_PARAMETER_LIST', index=142, number=142,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='TYPEDEF', index=143, number=144,
+      name='TYPEDEF', index=143, number=143,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ASM', index=144, number=145,
+      name='ASM', index=144, number=144,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='MACRO_CALL', index=145, number=146,
+      name='MACRO_CALL', index=145, number=145,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='SIZEOF_CALL', index=146, number=147,
+      name='SIZEOF_CALL', index=146, number=146,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='EXTERN', index=147, number=148,
+      name='EXTERN', index=147, number=147,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='NAMESPACE', index=148, number=149,
+      name='NAMESPACE', index=148, number=148,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='USING_DIRECTIVE', index=149, number=150,
+      name='USING_DIRECTIVE', index=149, number=149,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DIRECTIVE', index=150, number=151,
+      name='DIRECTIVE', index=150, number=150,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ATOMIC', index=151, number=152,
+      name='ATOMIC', index=151, number=151,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='STATIC_ASSERT_STATEMENT', index=152, number=153,
+      name='STATIC_ASSERT_STATEMENT', index=152, number=152,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='GENERIC_SELECTION', index=153, number=154,
+      name='GENERIC_SELECTION', index=153, number=153,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='GENERIC_SELECTOR', index=154, number=155,
+      name='GENERIC_SELECTOR', index=154, number=154,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='GENERIC_ASSOCIATION_LIST', index=155, number=156,
+      name='GENERIC_ASSOCIATION_LIST', index=155, number=155,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='GENERIC_ASSOCIATION', index=156, number=157,
+      name='GENERIC_ASSOCIATION', index=156, number=156,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ALIGNAS', index=157, number=158,
+      name='ALIGNAS', index=157, number=157,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DECLTYPE', index=158, number=159,
+      name='DECLTYPE', index=158, number=158,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CAPTURE', index=159, number=160,
+      name='CAPTURE', index=159, number=159,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='LAMBDA_CAPTURE', index=160, number=161,
+      name='LAMBDA_CAPTURE', index=160, number=160,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='NOEXCEPT', index=161, number=162,
+      name='NOEXCEPT', index=161, number=161,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='TYPENAME', index=162, number=163,
+      name='TYPENAME', index=162, number=162,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ALIGNOF', index=163, number=164,
+      name='ALIGNOF', index=163, number=163,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='TYPEID', index=164, number=165,
+      name='TYPEID', index=164, number=164,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='SIZEOF_PACK', index=165, number=166,
+      name='SIZEOF_PACK', index=165, number=165,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ENUM_CLASS', index=166, number=167,
+      name='ENUM_CLASS', index=166, number=166,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ENUM_CLASS_DECLARATION', index=167, number=168,
+      name='ENUM_CLASS_DECLARATION', index=167, number=167,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='REF_QUALIFIER', index=168, number=171,
+      name='REF_QUALIFIER', index=168, number=168,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='SIGNAL_ACCESS', index=169, number=172,
+      name='SIGNAL_ACCESS', index=169, number=169,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FOREVER_STATEMENT', index=170, number=173,
+      name='FOREVER_STATEMENT', index=170, number=170,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='EMIT_STATEMENT', index=171, number=174,
+      name='EMIT_STATEMENT', index=171, number=171,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_DIRECTIVE', index=172, number=175,
+      name='CPP_DIRECTIVE', index=172, number=172,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_FILENAME', index=173, number=176,
+      name='CPP_FILENAME', index=173, number=173,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FILE', index=174, number=177,
+      name='FILE', index=174, number=174,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='NUMBER', index=175, number=178,
+      name='NUMBER', index=175, number=175,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_NUMBER', index=176, number=179,
+      name='CPP_NUMBER', index=176, number=176,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_LITERAL', index=177, number=180,
+      name='CPP_LITERAL', index=177, number=177,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_MACRO_DEFN', index=178, number=181,
+      name='CPP_MACRO_DEFN', index=178, number=178,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_MACRO_VALUE', index=179, number=182,
+      name='CPP_MACRO_VALUE', index=179, number=179,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ERROR', index=180, number=183,
+      name='ERROR', index=180, number=180,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_ERROR', index=181, number=184,
+      name='CPP_ERROR', index=181, number=181,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_WARNING', index=182, number=185,
+      name='CPP_WARNING', index=182, number=182,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_PRAGMA', index=183, number=186,
+      name='CPP_PRAGMA', index=183, number=183,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_INCLUDE', index=184, number=187,
+      name='CPP_INCLUDE', index=184, number=184,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_DEFINE', index=185, number=188,
+      name='CPP_DEFINE', index=185, number=185,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_UNDEF', index=186, number=189,
+      name='CPP_UNDEF', index=186, number=186,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_LINE', index=187, number=190,
+      name='CPP_LINE', index=187, number=187,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_IF', index=188, number=191,
+      name='CPP_IF', index=188, number=188,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_IFDEF', index=189, number=192,
+      name='CPP_IFDEF', index=189, number=189,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_IFNDEF', index=190, number=193,
+      name='CPP_IFNDEF', index=190, number=190,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_THEN', index=191, number=194,
+      name='CPP_THEN', index=191, number=191,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_ELSE', index=192, number=195,
+      name='CPP_ELSE', index=192, number=192,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_ELIF', index=193, number=196,
+      name='CPP_ELIF', index=193, number=193,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_EMPTY', index=194, number=197,
+      name='CPP_EMPTY', index=194, number=194,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_REGION', index=195, number=198,
+      name='CPP_REGION', index=195, number=195,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_ENDREGION', index=196, number=199,
+      name='CPP_ENDREGION', index=196, number=196,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='USING_STMT', index=197, number=200,
+      name='USING_STMT', index=197, number=197,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ESCAPE', index=198, number=201,
+      name='ESCAPE', index=198, number=198,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='VALUE', index=199, number=202,
+      name='VALUE', index=199, number=199,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_IMPORT', index=200, number=203,
+      name='CPP_IMPORT', index=200, number=200,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CPP_ENDIF', index=201, number=204,
+      name='CPP_ENDIF', index=201, number=201,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='MARKER', index=202, number=205,
+      name='MARKER', index=202, number=202,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ERROR_PARSE', index=203, number=206,
+      name='ERROR_PARSE', index=203, number=203,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ERROR_MODE', index=204, number=207,
+      name='ERROR_MODE', index=204, number=204,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='IMPLEMENTS', index=205, number=208,
+      name='IMPLEMENTS', index=205, number=205,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='EXTENDS', index=206, number=209,
+      name='EXTENDS', index=206, number=206,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='IMPORT', index=207, number=210,
+      name='IMPORT', index=207, number=207,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PACKAGE', index=208, number=211,
+      name='PACKAGE', index=208, number=208,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ASSERT_STATEMENT', index=209, number=212,
+      name='ASSERT_STATEMENT', index=209, number=209,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='INTERFACE', index=210, number=213,
+      name='INTERFACE', index=210, number=210,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='INTERFACE_DECLARATION', index=211, number=214,
+      name='INTERFACE_DECLARATION', index=211, number=211,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='SYNCHRONIZED_STATEMENT', index=212, number=215,
+      name='SYNCHRONIZED_STATEMENT', index=212, number=212,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ANNOTATION', index=213, number=216,
+      name='ANNOTATION', index=213, number=213,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='STATIC_BLOCK', index=214, number=218,
+      name='STATIC_BLOCK', index=214, number=214,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CHECKED_STATEMENT', index=215, number=219,
+      name='CHECKED_STATEMENT', index=215, number=215,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='UNCHECKED_STATEMENT', index=216, number=220,
+      name='UNCHECKED_STATEMENT', index=216, number=216,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ATTRIBUTE', index=217, number=221,
+      name='ATTRIBUTE', index=217, number=217,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='TARGET', index=218, number=222,
+      name='TARGET', index=218, number=218,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='UNSAFE_STATEMENT', index=219, number=223,
+      name='UNSAFE_STATEMENT', index=219, number=219,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='LOCK_STATEMENT', index=220, number=224,
+      name='LOCK_STATEMENT', index=220, number=220,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FIXED_STATEMENT', index=221, number=225,
+      name='FIXED_STATEMENT', index=221, number=221,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='TYPEOF', index=222, number=226,
+      name='TYPEOF', index=222, number=222,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='USING_STATEMENT', index=223, number=227,
+      name='USING_STATEMENT', index=223, number=223,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FUNCTION_DELEGATE', index=224, number=228,
+      name='FUNCTION_DELEGATE', index=224, number=224,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CONSTRAINT', index=225, number=230,
+      name='CONSTRAINT', index=225, number=225,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='LINQ', index=226, number=231,
+      name='LINQ', index=226, number=226,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FROM', index=227, number=232,
+      name='FROM', index=227, number=227,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='WHERE', index=228, number=233,
+      name='WHERE', index=228, number=228,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='SELECT', index=229, number=234,
+      name='SELECT', index=229, number=229,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='LET', index=230, number=235,
+      name='LET', index=230, number=230,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ORDERBY', index=231, number=236,
+      name='ORDERBY', index=231, number=231,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='JOIN', index=232, number=237,
+      name='JOIN', index=232, number=232,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='GROUP', index=233, number=238,
+      name='GROUP', index=233, number=233,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='IN', index=234, number=239,
+      name='IN', index=234, number=234,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ON', index=235, number=240,
+      name='ON', index=235, number=235,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='EQUALS', index=236, number=241,
+      name='EQUALS', index=236, number=236,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='BY', index=237, number=242,
+      name='BY', index=237, number=237,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='INTO', index=238, number=243,
+      name='INTO', index=238, number=238,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='EMPTY', index=239, number=244,
+      name='EMPTY', index=239, number=239,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='EMPTY_STMT', index=240, number=245,
+      name='EMPTY_STMT', index=240, number=240,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='RECEIVER', index=241, number=246,
+      name='RECEIVER', index=241, number=241,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='MESSAGE', index=242, number=247,
+      name='MESSAGE', index=242, number=242,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='SELECTOR', index=243, number=248,
+      name='SELECTOR', index=243, number=243,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PROTOCOL_LIST', index=244, number=249,
+      name='PROTOCOL_LIST', index=244, number=244,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CATEGORY', index=245, number=250,
+      name='CATEGORY', index=245, number=245,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PROTOCOL', index=246, number=251,
+      name='PROTOCOL', index=246, number=246,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='REQUIRED_DEFAULT', index=247, number=252,
+      name='REQUIRED_DEFAULT', index=247, number=247,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='REQUIRED', index=248, number=253,
+      name='REQUIRED', index=248, number=248,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='OPTIONAL', index=249, number=254,
+      name='OPTIONAL', index=249, number=249,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ATTRIBUTE_LIST', index=250, number=256,
+      name='ATTRIBUTE_LIST', index=250, number=250,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='SYNTHESIZE', index=251, number=257,
+      name='SYNTHESIZE', index=251, number=251,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DYNAMIC', index=252, number=258,
+      name='DYNAMIC', index=252, number=252,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ENCODE', index=253, number=259,
+      name='ENCODE', index=253, number=253,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='AUTORELEASEPOOL', index=254, number=260,
+      name='AUTORELEASEPOOL', index=254, number=254,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='COMPATIBILITY_ALIAS', index=255, number=261,
+      name='COMPATIBILITY_ALIAS', index=255, number=255,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='NIL', index=256, number=262,
+      name='NIL', index=256, number=256,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CLASS_INTERFACE', index=257, number=263,
+      name='CLASS_INTERFACE', index=257, number=257,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CLASS_IMPLEMENTATION', index=258, number=264,
+      name='CLASS_IMPLEMENTATION', index=258, number=258,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PROTOCOL_DECLARATION', index=259, number=265,
+      name='PROTOCOL_DECLARATION', index=259, number=259,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CAST', index=260, number=266,
+      name='CAST', index=260, number=260,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CONST_CAST', index=261, number=267,
+      name='CONST_CAST', index=261, number=261,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DYNAMIC_CAST', index=262, number=268,
+      name='DYNAMIC_CAST', index=262, number=262,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='REINTERPRET_CAST', index=263, number=269,
+      name='REINTERPRET_CAST', index=263, number=263,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='STATIC_CAST', index=264, number=270,
+      name='STATIC_CAST', index=264, number=264,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='POSITION', index=265, number=271,
+      name='POSITION', index=265, number=265,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CUDA_ARGUMENT_LIST', index=266, number=272,
+      name='CUDA_ARGUMENT_LIST', index=266, number=266,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='OMP_DIRECTIVE', index=267, number=273,
+      name='OMP_DIRECTIVE', index=267, number=267,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='OMP_NAME', index=268, number=274,
+      name='OMP_NAME', index=268, number=268,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='OMP_CLAUSE', index=269, number=275,
+      name='OMP_CLAUSE', index=269, number=269,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='OMP_ARGUMENT_LIST', index=270, number=276,
+      name='OMP_ARGUMENT_LIST', index=270, number=270,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='OMP_ARGUMENT', index=271, number=277,
+      name='OMP_ARGUMENT', index=271, number=271,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='OMP_EXPRESSION', index=272, number=278,
+      name='OMP_EXPRESSION', index=272, number=272,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='END_ELEMENT_TOKEN', index=273, number=279,
+      name='END_ELEMENT_TOKEN', index=273, number=273,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='MAIN', index=274, number=280,
+      name='MAIN', index=274, number=274,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='BREAK', index=275, number=281,
+      name='BREAK', index=275, number=275,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CONTINUE', index=276, number=282,
+      name='CONTINUE', index=276, number=276,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='WHILE', index=277, number=283,
+      name='WHILE', index=277, number=277,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DO', index=278, number=284,
+      name='DO', index=278, number=278,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FOR', index=279, number=285,
+      name='FOR', index=279, number=279,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='IF', index=280, number=286,
+      name='IF', index=280, number=280,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='GOTO', index=281, number=293,
+      name='GOTO', index=281, number=281,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='VISUAL_CXX_ASM', index=282, number=295,
+      name='VISUAL_CXX_ASM', index=282, number=282,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='SIZEOF', index=283, number=296,
+      name='SIZEOF', index=283, number=283,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='AUTO', index=284, number=298,
+      name='AUTO', index=284, number=284,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='REGISTER', index=285, number=299,
+      name='REGISTER', index=285, number=285,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='RESTRICT', index=286, number=300,
+      name='RESTRICT', index=286, number=286,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='IMAGINARY', index=287, number=304,
+      name='IMAGINARY', index=287, number=287,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='NORETURN', index=288, number=305,
+      name='NORETURN', index=288, number=288,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='STATIC_ASSERT', index=289, number=306,
+      name='STATIC_ASSERT', index=289, number=289,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CRESTRICT', index=290, number=307,
+      name='CRESTRICT', index=290, number=290,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CXX_TRY', index=291, number=308,
+      name='CXX_TRY', index=291, number=291,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CXX_CATCH', index=292, number=309,
+      name='CXX_CATCH', index=292, number=292,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CXX_CLASS', index=293, number=310,
+      name='CXX_CLASS', index=293, number=293,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CONSTEXPR', index=294, number=311,
+      name='CONSTEXPR', index=294, number=294,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='THREAD_LOCAL', index=295, number=313,
+      name='THREAD_LOCAL', index=295, number=295,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='NULLPTR', index=296, number=314,
+      name='NULLPTR', index=296, number=296,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='VOID', index=297, number=326,
+      name='VOID', index=297, number=297,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='RETURN', index=298, number=327,
+      name='RETURN', index=298, number=298,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='INCLUDE', index=299, number=328,
+      name='INCLUDE', index=299, number=299,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DEFINE', index=300, number=329,
+      name='DEFINE', index=300, number=300,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ELIF', index=301, number=330,
+      name='ELIF', index=301, number=301,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ENDIF', index=302, number=331,
+      name='ENDIF', index=302, number=302,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ERRORPREC', index=303, number=332,
+      name='ERRORPREC', index=303, number=303,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='WARNING', index=304, number=333,
+      name='WARNING', index=304, number=304,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='IFDEF', index=305, number=334,
+      name='IFDEF', index=305, number=305,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='IFNDEF', index=306, number=335,
+      name='IFNDEF', index=306, number=306,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='LINE', index=307, number=336,
+      name='LINE', index=307, number=307,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PRAGMA', index=308, number=337,
+      name='PRAGMA', index=308, number=308,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='UNDEF', index=309, number=338,
+      name='UNDEF', index=309, number=309,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='INLINE', index=310, number=339,
+      name='INLINE', index=310, number=310,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='MACRO_TYPE_NAME', index=311, number=340,
+      name='MACRO_TYPE_NAME', index=311, number=311,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='MACRO_CASE', index=312, number=341,
+      name='MACRO_CASE', index=312, number=312,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='MACRO_LABEL', index=313, number=342,
+      name='MACRO_LABEL', index=313, number=313,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='SPECIFIER', index=314, number=344,
+      name='SPECIFIER', index=314, number=314,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='TRY', index=315, number=345,
+      name='TRY', index=315, number=315,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CATCH', index=316, number=346,
+      name='CATCH', index=316, number=316,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='THROW', index=317, number=347,
+      name='THROW', index=317, number=317,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='THROWS', index=318, number=348,
+      name='THROWS', index=318, number=318,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PUBLIC', index=319, number=350,
+      name='PUBLIC', index=319, number=319,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PRIVATE', index=320, number=351,
+      name='PRIVATE', index=320, number=320,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PROTECTED', index=321, number=352,
+      name='PROTECTED', index=321, number=321,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='VIRTUAL', index=322, number=353,
+      name='VIRTUAL', index=322, number=322,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='EXPLICIT', index=323, number=356,
+      name='EXPLICIT', index=323, number=323,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FOREVER', index=324, number=357,
+      name='FOREVER', index=324, number=324,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='SIGNAL', index=325, number=358,
+      name='SIGNAL', index=325, number=325,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='EMIT', index=326, number=359,
+      name='EMIT', index=326, number=326,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='NEW', index=327, number=363,
+      name='NEW', index=327, number=327,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DELETE', index=328, number=364,
+      name='DELETE', index=328, number=328,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='STATIC', index=329, number=365,
+      name='STATIC', index=329, number=329,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CONST', index=330, number=366,
+      name='CONST', index=330, number=330,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='MUTABLE', index=331, number=367,
+      name='MUTABLE', index=331, number=331,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='VOLATILE', index=332, number=368,
+      name='VOLATILE', index=332, number=332,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='TRANSIENT', index=333, number=369,
+      name='TRANSIENT', index=333, number=333,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FINALLY', index=334, number=372,
+      name='FINALLY', index=334, number=334,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FINAL', index=335, number=376,
+      name='FINAL', index=335, number=335,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ABSTRACT', index=336, number=377,
+      name='ABSTRACT', index=336, number=336,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='SUPER', index=337, number=378,
+      name='SUPER', index=337, number=337,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='SYNCHRONIZED', index=338, number=379,
+      name='SYNCHRONIZED', index=338, number=338,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='NATIVE', index=339, number=380,
+      name='NATIVE', index=339, number=339,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='STRICTFP', index=340, number=381,
+      name='STRICTFP', index=340, number=340,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='NULLLITERAL', index=341, number=382,
+      name='NULLLITERAL', index=341, number=341,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ASSERT', index=342, number=383,
+      name='ASSERT', index=342, number=342,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FOREACH', index=343, number=384,
+      name='FOREACH', index=343, number=343,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='REF', index=344, number=385,
+      name='REF', index=344, number=344,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='OUT', index=345, number=386,
+      name='OUT', index=345, number=345,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='LOCK', index=346, number=388,
+      name='LOCK', index=346, number=346,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='IS', index=347, number=389,
+      name='IS', index=347, number=347,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='INTERNAL', index=348, number=390,
+      name='INTERNAL', index=348, number=348,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='SEALED', index=349, number=391,
+      name='SEALED', index=349, number=349,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='OVERRIDE', index=350, number=392,
+      name='OVERRIDE', index=350, number=350,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='IMPLICIT', index=351, number=393,
+      name='IMPLICIT', index=351, number=351,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='STACKALLOC', index=352, number=394,
+      name='STACKALLOC', index=352, number=352,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='AS', index=353, number=395,
+      name='AS', index=353, number=353,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DELEGATE', index=354, number=396,
+      name='DELEGATE', index=354, number=354,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='FIXED', index=355, number=397,
+      name='FIXED', index=355, number=355,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='CHECKED', index=356, number=398,
+      name='CHECKED', index=356, number=356,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='UNCHECKED', index=357, number=399,
+      name='UNCHECKED', index=357, number=357,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='REGION', index=358, number=400,
+      name='REGION', index=358, number=358,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ENDREGION', index=359, number=401,
+      name='ENDREGION', index=359, number=359,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='UNSAFE', index=360, number=402,
+      name='UNSAFE', index=360, number=360,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='READONLY', index=361, number=403,
+      name='READONLY', index=361, number=361,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='GET', index=362, number=404,
+      name='GET', index=362, number=362,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='SET', index=363, number=405,
+      name='SET', index=363, number=363,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ADD', index=364, number=406,
+      name='ADD', index=364, number=364,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='REMOVE', index=365, number=407,
+      name='REMOVE', index=365, number=365,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='YIELD', index=366, number=408,
+      name='YIELD', index=366, number=366,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PARTIAL', index=367, number=409,
+      name='PARTIAL', index=367, number=367,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='AWAIT', index=368, number=410,
+      name='AWAIT', index=368, number=368,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ASYNC', index=369, number=412,
+      name='ASYNC', index=369, number=369,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='THIS', index=370, number=413,
+      name='THIS', index=370, number=370,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='PARAMS', index=371, number=414,
+      name='PARAMS', index=371, number=371,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ALIAS', index=372, number=416,
+      name='ALIAS', index=372, number=372,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ASCENDING', index=373, number=422,
+      name='ASCENDING', index=373, number=373,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='DESCENDING', index=374, number=423,
+      name='DESCENDING', index=374, number=374,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ATINTERFACE', index=375, number=430,
+      name='ATINTERFACE', index=375, number=375,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ATIMPLEMENTATION', index=376, number=431,
+      name='ATIMPLEMENTATION', index=376, number=376,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ATEND', index=377, number=432,
+      name='ATEND', index=377, number=377,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ATPROTOCOL', index=378, number=433,
+      name='ATPROTOCOL', index=378, number=378,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ATREQUIRED', index=379, number=434,
+      name='ATREQUIRED', index=379, number=379,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ATOPTIONAL', index=380, number=435,
+      name='ATOPTIONAL', index=380, number=380,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ATCLASS', index=381, number=441,
+      name='ATCLASS', index=381, number=381,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='WEAK', index=382, number=443,
+      name='WEAK', index=382, number=382,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='STRONG', index=383, number=444,
+      name='STRONG', index=383, number=383,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='OMP_OMP', index=384, number=448,
+      name='OMP_OMP', index=384, number=384,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='SPECIAL_CHARS', index=385, number=449,
+      name='SPECIAL_CHARS', index=385, number=385,
       options=None,
       type=None),
   ],
   containing_type=None,
   options=None,
-  serialized_start=812,
-  serialized_end=7259,
+  serialized_start=857,
+  serialized_end=7303,
 )
 _sym_db.RegisterEnumDescriptor(_ELEMENT_KIND)
 
@@ -2675,8 +3090,8 @@ _ELEMENT_DIFFTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=7261,
-  serialized_end=7342,
+  serialized_start=7305,
+  serialized_end=7386,
 )
 _sym_db.RegisterEnumDescriptor(_ELEMENT_DIFFTYPE)
 
@@ -2709,8 +3124,8 @@ _DELTA_DIFF_DELTATYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=7871,
-  serialized_end=7933,
+  serialized_start=7915,
+  serialized_end=7977,
 )
 _sym_db.RegisterEnumDescriptor(_DELTA_DIFF_DELTATYPE)
 
@@ -2735,8 +3150,8 @@ _PAIRS_PAIR_CLONETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=8330,
-  serialized_end=8369,
+  serialized_start=8374,
+  serialized_end=8413,
 )
 _sym_db.RegisterEnumDescriptor(_PAIRS_PAIR_CLONETYPE)
 
@@ -2761,8 +3176,8 @@ _SLICES_SLICE_CHANGETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=10105,
-  serialized_end=10150,
+  serialized_start=10149,
+  serialized_end=10194,
 )
 _sym_db.RegisterEnumDescriptor(_SLICES_SLICE_CHANGETYPE)
 
@@ -2815,8 +3230,8 @@ _ELEMENT_UNIT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=415,
-  serialized_end=635,
+  serialized_start=460,
+  serialized_end=680,
 )
 
 _ELEMENT_LITERAL = _descriptor.Descriptor(
@@ -2846,8 +3261,8 @@ _ELEMENT_LITERAL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=638,
-  serialized_end=809,
+  serialized_start=683,
+  serialized_end=854,
 )
 
 _ELEMENT = _descriptor.Descriptor(
@@ -2879,85 +3294,92 @@ _ELEMENT = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='text', full_name='fast.Element.text', index=3,
-      number=4, type=12, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b(""),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='pos', full_name='fast.Element.pos', index=4,
-      number=5, type=5, cpp_type=1, label=1,
+      name='solidity_kind', full_name='fast.Element.solidity_kind', index=3,
+      number=4, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='length', full_name='fast.Element.length', index=5,
+      name='text', full_name='fast.Element.text', index=4,
+      number=5, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b(""),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='pos', full_name='fast.Element.pos', index=5,
       number=6, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='child', full_name='fast.Element.child', index=6,
-      number=7, type=11, cpp_type=10, label=3,
+      name='length', full_name='fast.Element.length', index=6,
+      number=7, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='child', full_name='fast.Element.child', index=7,
+      number=8, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='tail', full_name='fast.Element.tail', index=7,
-      number=8, type=12, cpp_type=9, label=1,
+      name='tail', full_name='fast.Element.tail', index=8,
+      number=9, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='unit', full_name='fast.Element.unit', index=8,
-      number=9, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='literal', full_name='fast.Element.literal', index=9,
+      name='unit', full_name='fast.Element.unit', index=9,
       number=10, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='line', full_name='fast.Element.line', index=10,
-      number=11, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      name='literal', full_name='fast.Element.literal', index=10,
+      number=11, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='column', full_name='fast.Element.column', index=11,
+      name='line', full_name='fast.Element.line', index=11,
       number=12, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='label', full_name='fast.Element.label', index=12,
-      number=13, type=2, cpp_type=6, label=1,
-      has_default_value=False, default_value=float(0),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='change', full_name='fast.Element.change', index=13,
-      number=14, type=14, cpp_type=8, label=1,
+      name='column', full_name='fast.Element.column', index=12,
+      number=13, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='keep', full_name='fast.Element.keep', index=14,
-      number=15, type=8, cpp_type=7, label=1,
+      name='label', full_name='fast.Element.label', index=13,
+      number=14, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='change', full_name='fast.Element.change', index=14,
+      number=15, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='keep', full_name='fast.Element.keep', index=15,
+      number=16, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -2983,7 +3405,7 @@ _ELEMENT = _descriptor.Descriptor(
       index=1, containing_type=None, fields=[]),
   ],
   serialized_start=21,
-  serialized_end=7359,
+  serialized_end=7403,
 )
 
 
@@ -3020,8 +3442,8 @@ _DELTA_DIFF_MATCH = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7677,
-  serialized_end=7710,
+  serialized_start=7721,
+  serialized_end=7754,
 )
 
 _DELTA_DIFF_ADD = _descriptor.Descriptor(
@@ -3064,8 +3486,8 @@ _DELTA_DIFF_ADD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7712,
-  serialized_end=7761,
+  serialized_start=7756,
+  serialized_end=7805,
 )
 
 _DELTA_DIFF_DEL = _descriptor.Descriptor(
@@ -3094,8 +3516,8 @@ _DELTA_DIFF_DEL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7763,
-  serialized_end=7781,
+  serialized_start=7807,
+  serialized_end=7825,
 )
 
 _DELTA_DIFF_MOVE = _descriptor.Descriptor(
@@ -3138,8 +3560,8 @@ _DELTA_DIFF_MOVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7783,
-  serialized_end=7833,
+  serialized_start=7827,
+  serialized_end=7877,
 )
 
 _DELTA_DIFF_UPDATE = _descriptor.Descriptor(
@@ -3175,8 +3597,8 @@ _DELTA_DIFF_UPDATE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7835,
-  serialized_end=7869,
+  serialized_start=7879,
+  serialized_end=7913,
 )
 
 _DELTA_DIFF = _descriptor.Descriptor(
@@ -3244,8 +3666,8 @@ _DELTA_DIFF = _descriptor.Descriptor(
       name='delta', full_name='fast.Delta.Diff.delta',
       index=0, containing_type=None, fields=[]),
   ],
-  serialized_start=7430,
-  serialized_end=7942,
+  serialized_start=7474,
+  serialized_end=7986,
 )
 
 _DELTA = _descriptor.Descriptor(
@@ -3288,8 +3710,8 @@ _DELTA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7362,
-  serialized_end=7942,
+  serialized_start=7406,
+  serialized_end=7986,
 )
 
 
@@ -3375,8 +3797,8 @@ _PAIRS_PAIR_DIFF = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8113,
-  serialized_end=8328,
+  serialized_start=8157,
+  serialized_end=8372,
 )
 
 _PAIRS_PAIR = _descriptor.Descriptor(
@@ -3420,8 +3842,8 @@ _PAIRS_PAIR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7987,
-  serialized_end=8369,
+  serialized_start=8031,
+  serialized_end=8413,
 )
 
 _PAIRS = _descriptor.Descriptor(
@@ -3450,8 +3872,8 @@ _PAIRS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7945,
-  serialized_end=8369,
+  serialized_start=7989,
+  serialized_end=8413,
 )
 
 
@@ -3488,8 +3910,8 @@ _LOG_COMMIT_COMMITTER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8639,
-  serialized_end=8693,
+  serialized_start=8683,
+  serialized_end=8737,
 )
 
 _LOG_COMMIT_DIFF_HUNK_MODLINE = _descriptor.Descriptor(
@@ -3532,8 +3954,8 @@ _LOG_COMMIT_DIFF_HUNK_MODLINE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9069,
-  serialized_end=9124,
+  serialized_start=9113,
+  serialized_end=9168,
 )
 
 _LOG_COMMIT_DIFF_HUNK = _descriptor.Descriptor(
@@ -3611,8 +4033,8 @@ _LOG_COMMIT_DIFF_HUNK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8854,
-  serialized_end=9124,
+  serialized_start=8898,
+  serialized_end=9168,
 )
 
 _LOG_COMMIT_DIFF = _descriptor.Descriptor(
@@ -3690,8 +4112,8 @@ _LOG_COMMIT_DIFF = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8696,
-  serialized_end=9124,
+  serialized_start=8740,
+  serialized_end=9168,
 )
 
 _LOG_COMMIT = _descriptor.Descriptor(
@@ -3765,8 +4187,8 @@ _LOG_COMMIT = _descriptor.Descriptor(
       name='extra', full_name='fast.Log.Commit.extra',
       index=0, containing_type=None, fields=[]),
   ],
-  serialized_start=8448,
-  serialized_end=9133,
+  serialized_start=8492,
+  serialized_end=9177,
 )
 
 _LOG_AUTHOR = _descriptor.Descriptor(
@@ -3809,8 +4231,8 @@ _LOG_AUTHOR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9135,
-  serialized_end=9184,
+  serialized_start=9179,
+  serialized_end=9228,
 )
 
 _LOG = _descriptor.Descriptor(
@@ -3846,8 +4268,8 @@ _LOG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8372,
-  serialized_end=9184,
+  serialized_start=8416,
+  serialized_end=9228,
 )
 
 
@@ -3891,8 +4313,8 @@ _SLICES_SLICE_SOURCEFILE_FUNCTION_VARIABLE_POSITION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9964,
-  serialized_end=10057,
+  serialized_start=10008,
+  serialized_end=10101,
 )
 
 _SLICES_SLICE_SOURCEFILE_FUNCTION_VARIABLE_FUNCTIONDECL = _descriptor.Descriptor(
@@ -3928,8 +4350,8 @@ _SLICES_SLICE_SOURCEFILE_FUNCTION_VARIABLE_FUNCTIONDECL = _descriptor.Descriptor
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10059,
-  serialized_end=10103,
+  serialized_start=10103,
+  serialized_end=10147,
 )
 
 _SLICES_SLICE_SOURCEFILE_FUNCTION_VARIABLE = _descriptor.Descriptor(
@@ -4007,8 +4429,8 @@ _SLICES_SLICE_SOURCEFILE_FUNCTION_VARIABLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9573,
-  serialized_end=10103,
+  serialized_start=9617,
+  serialized_end=10147,
 )
 
 _SLICES_SLICE_SOURCEFILE_FUNCTION = _descriptor.Descriptor(
@@ -4051,8 +4473,8 @@ _SLICES_SLICE_SOURCEFILE_FUNCTION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9434,
-  serialized_end=10103,
+  serialized_start=9478,
+  serialized_end=10147,
 )
 
 _SLICES_SLICE_SOURCEFILE = _descriptor.Descriptor(
@@ -4095,8 +4517,8 @@ _SLICES_SLICE_SOURCEFILE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9302,
-  serialized_end=10103,
+  serialized_start=9346,
+  serialized_end=10147,
 )
 
 _SLICES_SLICE = _descriptor.Descriptor(
@@ -4133,8 +4555,8 @@ _SLICES_SLICE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9233,
-  serialized_end=10150,
+  serialized_start=9277,
+  serialized_end=10194,
 )
 
 _SLICES = _descriptor.Descriptor(
@@ -4163,8 +4585,8 @@ _SLICES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9187,
-  serialized_end=10150,
+  serialized_start=9231,
+  serialized_end=10194,
 )
 
 
@@ -4201,8 +4623,8 @@ _BUGS_BUG_INFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10323,
-  serialized_end=10367,
+  serialized_start=10367,
+  serialized_end=10411,
 )
 
 _BUGS_BUG = _descriptor.Descriptor(
@@ -4259,8 +4681,8 @@ _BUGS_BUG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10211,
-  serialized_end=10367,
+  serialized_start=10255,
+  serialized_end=10411,
 )
 
 _BUGS = _descriptor.Descriptor(
@@ -4296,8 +4718,8 @@ _BUGS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10153,
-  serialized_end=10367,
+  serialized_start=10197,
+  serialized_end=10411,
 )
 
 
@@ -4365,8 +4787,8 @@ _DATA = _descriptor.Descriptor(
       name='RecordType', full_name='fast.Data.RecordType',
       index=0, containing_type=None, fields=[]),
   ],
-  serialized_start=10370,
-  serialized_end=10570,
+  serialized_start=10414,
+  serialized_end=10614,
 )
 
 _ELEMENT_UNIT.fields_by_name['language'].enum_type = _ELEMENT_UNIT_LANGUAGETYPE
@@ -4378,6 +4800,7 @@ _ELEMENT_LITERAL_LITERALTYPE.containing_type = _ELEMENT_LITERAL
 _ELEMENT.fields_by_name['kind'].enum_type = _ELEMENT_KIND
 _ELEMENT.fields_by_name['smali_kind'].enum_type = _SMALIKIND
 _ELEMENT.fields_by_name['python3_kind'].enum_type = _PYTHON3KIND
+_ELEMENT.fields_by_name['solidity_kind'].enum_type = _SOLIDITYKIND
 _ELEMENT.fields_by_name['child'].message_type = _ELEMENT
 _ELEMENT.fields_by_name['unit'].message_type = _ELEMENT_UNIT
 _ELEMENT.fields_by_name['literal'].message_type = _ELEMENT_LITERAL
@@ -4393,6 +4816,9 @@ _ELEMENT.fields_by_name['smali_kind'].containing_oneof = _ELEMENT.oneofs_by_name
 _ELEMENT.oneofs_by_name['type'].fields.append(
   _ELEMENT.fields_by_name['python3_kind'])
 _ELEMENT.fields_by_name['python3_kind'].containing_oneof = _ELEMENT.oneofs_by_name['type']
+_ELEMENT.oneofs_by_name['type'].fields.append(
+  _ELEMENT.fields_by_name['solidity_kind'])
+_ELEMENT.fields_by_name['solidity_kind'].containing_oneof = _ELEMENT.oneofs_by_name['type']
 _ELEMENT.oneofs_by_name['extra'].fields.append(
   _ELEMENT.fields_by_name['unit'])
 _ELEMENT.fields_by_name['unit'].containing_oneof = _ELEMENT.oneofs_by_name['extra']
@@ -4512,6 +4938,7 @@ DESCRIPTOR.message_types_by_name['Bugs'] = _BUGS
 DESCRIPTOR.message_types_by_name['Data'] = _DATA
 DESCRIPTOR.enum_types_by_name['SmaliKind'] = _SMALIKIND
 DESCRIPTOR.enum_types_by_name['Python3Kind'] = _PYTHON3KIND
+DESCRIPTOR.enum_types_by_name['SolidityKind'] = _SOLIDITYKIND
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Element = _reflection.GeneratedProtocolMessageType('Element', (_message.Message,), dict(

@@ -47,8 +47,6 @@ def parse_raw_data_to_pickle(infile,outfile):
         pickle.dump(samples, file_handler)
         file_handler.close()
 
-    print('Sampled node counts:')
-    print(node_counts)
     print('Total: %d' % sum(node_counts.values()))
 
 def _create_samples(node):

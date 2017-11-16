@@ -20,19 +20,14 @@ def parse_pickle_to_training_trees(infile,outfile):
 
     train_counts = defaultdict(int)
     test_counts = defaultdict(int)
-    count = 0
     for item in data_source:
-        # if count == 1:
-        #     print item
 
-        # count += 1
         tree = item['tree']
         label = item['metadata']['label']
       
         if tree.HasField("element"):
             root = tree.element
             sample, size = _traverse_tree(root)
-            # print sample
         
         if size > 10000 or size < 100:
             continue
@@ -51,10 +46,8 @@ def parse_pickle_to_training_trees(infile,outfile):
     random.shuffle(train_samples)
     random.shuffle(test_samples)
 
-
     # create a list of unique labels in the data
     labels = list(set(train_counts.keys() + test_counts.keys()))
-
 
     print('Dumping sample')
     with open(outfile, 'wb') as file_handler:
@@ -88,7 +81,7 @@ def _traverse_tree(root):
        
         for child in children:
             # print "##################"
-            print child.kind
+            #print child.kind
 
             child_json = {
                 "node": str(child.kind),
@@ -98,7 +91,6 @@ def _traverse_tree(root):
             current_node_json['children'].append(child_json)
             queue_json.append(child_json)
             # print current_node_json
-    #         count += 1
   
     return root_json, num_nodes
 
