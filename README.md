@@ -1,6 +1,6 @@
-# Bilateral Tree-based Convolutional Neural Networks
+# Cross-Language Program Classification using Bilateral Tree-based Convolutional Neural Networks
 
-The project is an implementation of Bi-TBCNN introduced in our paper for the first Natural Languages for Software Engineering (NL4SE) 
+The project is an implementation of Bi-TBCNN introduced in our paper for the 1st Natural Languages for Software Engineering (NL4SE) 
 workshop at AAAI'18 conference.
 
 We have prepared a fully automated workflow for you to classify programs against known algorithm names.
@@ -10,7 +10,7 @@ To do so, you need to first install docker command
 sudo apt-get install docker-ce
 ```
 
-Then run the following command:
+Then run the following script on the command line:
 ```
 ./b
 ```
