@@ -1,9 +1,14 @@
 # Cross-Language Program Classification using Bilateral Tree-based Convolutional Neural Networks
 
-The project is an implementation of Bi-TBCNN introduced in our paper for the 1st Natural Languages for Software Engineering (NL4SE) 
-workshop at AAAI'18 conference.
+The project is an implementation of Bi-TBCNN introduced in our paper for <a
+href="https://nl4se.github.io">the 1st Natural Languages for Software
+Engineering (NL4SE) workshop at AAAI'18 conference</a>.
 
-We have prepared a fully automated workflow for you to classify programs against known algorithm names.
+We have prepared a fully automated workflow (Figure 1) for you to classify programs against known algorithm names.
+
+![workflow](doc/workflow.png)
+Figure 1. The workflow to use our tools
+
 To do so, you need to first install docker command
 
 ```
