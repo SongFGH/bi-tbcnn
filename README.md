@@ -79,7 +79,7 @@ fast v0.0.7 commit id: 3e368dd1e56f5bb8f02673b1c7441f567eab67ee with local chang
 built with 6.4.0 on Nov 14 2017 at 20:00:04
 ```
 
-If a different version of `fast` is prepared, it might require a regenerated input file.
+If a different version of `fast` is prepared, it might require a regenerated input file `./ast2vec/ast2vec/fast_pb2.py` if there is any change in the language grammar. 
 
 ### Other parameters for tensorflow framework are stored in the following two files, each corresponds to a Tensorflow run.
 ```
