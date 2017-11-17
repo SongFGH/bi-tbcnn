@@ -15,9 +15,10 @@ To do so, you need to first install docker command
 sudo apt-get install docker-ce
 ```
 
-Then run the following script on the command line:
+Enter the following scripts on the command line to build and run the system respectively:
 ```
 ./b
+./r clean
 ```
 
 ## Modify the inputs
