@@ -1,5 +1,6 @@
 if [ "$1" == "clean" ]; then
-	sudo rm -rf code ast vec model
+#	sudo rm -rf code ast vec model
+	sudo rm -rf ast vec model
 fi
 if [ ! -d code ]; then
 	mkdir -p code
