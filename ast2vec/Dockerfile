@@ -1,4 +1,4 @@
-FROM gcr.io/tensorflow/tensorflow
+FROM tensorflow/tensorflow:1.4.1
 RUN apt-get update
 RUN apt-get install time
 RUN pip install tqdm

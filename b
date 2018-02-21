@@ -1,4 +1,5 @@
-docker login -u yijun
+# You need to be Yijun Yu to run this script I am afraid :-)
+#docker login -u yijun
 for machine in crawler parser ast2vec bi-tbcnn; do
 	docker build -t bi-tbcnn:$machine $machine
 	docker tag bi-tbcnn:$machine yijun/bi-tbcnn:$machine

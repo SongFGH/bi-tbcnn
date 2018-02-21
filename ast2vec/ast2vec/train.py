@@ -7,6 +7,7 @@ import tensorflow as tf
 import network
 import sampling
 import sys
+os.environ["TF_CPP_MIN_LOG_LEVEL"]="3"
 
 from srcml_node_map import SRCML_NODE_MAP as NODE_MAP
 # NODE_MAP = {i: i for i in range(0,449)}

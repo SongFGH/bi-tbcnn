@@ -10,10 +10,10 @@ if [ ! -d ast ]; then
 	mkdir -p ast
 	docker run -v $(pwd)/code:/code:ro -v $(pwd)/ast:/ast -it yijun/bi-tbcnn:parser
 fi
-if [ ! -d vec ]; then
-	mkdir -p vec
+#if [ ! -d vec ]; then
+#	mkdir -p vec
 	docker run -v $(pwd)/input:/input:ro -v $(pwd)/ast:/ast:ro -v $(pwd)/vec:/vec -it yijun/bi-tbcnn:ast2vec
-fi
+#fi
 if [ ! -d model ]; then
 	mkdir -p model
 	docker run -v $(pwd)/input:/input:ro -v $(pwd)/vec:/vec:ro -v $(pwd)/model:/model -it yijun/bi-tbcnn:bi-tbcnn
